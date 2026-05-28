@@ -315,6 +315,14 @@ h4 {
   margin-top: 2rem;
 }
 
+.centered-actions {
+  justify-content: center;
+}
+
+.program-more {
+  margin-top: 3.5rem;
+}
+
 .hero .actions,
 .quote-band .actions {
   justify-content: center;
@@ -412,6 +420,96 @@ h4 {
   color: var(--secondary);
   font-size: .92rem;
   font-weight: 800;
+}
+
+.program-feature-card {
+  text-align: center;
+  padding: 2.2rem 1.8rem;
+}
+
+.program-feature-card h3 {
+  max-width: 13rem;
+  margin: 0 auto;
+  color: #3a5b78;
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+.card-kicker {
+  margin: .25rem 0 1rem;
+  color: #5f7f9b;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.line-icon {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+
+.line-icon::before,
+.line-icon::after,
+.session-icon::before,
+.session-icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.icon-format::before {
+  width: 24px;
+  height: 16px;
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+}
+
+.icon-format::after {
+  width: 8px;
+  height: 2px;
+  background: var(--secondary);
+  bottom: 9px;
+}
+
+.icon-focus::before {
+  width: 9px;
+  height: 20px;
+  border: 2px solid var(--secondary);
+  border-radius: 5px 5px 3px 3px;
+  bottom: 8px;
+}
+
+.icon-focus::after {
+  width: 12px;
+  height: 12px;
+  background: var(--secondary-soft);
+  border-radius: 12px 12px 12px 0;
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.icon-include::before {
+  width: 26px;
+  height: 18px;
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+}
+
+.icon-include::after {
+  width: 2px;
+  height: 18px;
+  background: var(--secondary);
+}
+
+.icon-for::before {
+  content: "\2726";
+  position: static;
+  color: var(--secondary);
+  font-size: 1.55rem;
+  line-height: 1;
 }
 
 .muted {
@@ -539,8 +637,9 @@ h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: .45rem;
   width: fit-content;
-  min-width: 92px;
+  min-width: 118px;
   min-height: 0;
   padding: .55rem .85rem;
   border-radius: 999px;
@@ -549,6 +648,160 @@ h4 {
   font-size: .78rem;
   line-height: 1;
   font-weight: 800;
+}
+
+.session-icon {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 1.1rem;
+  border-radius: 50%;
+  background: rgba(115, 92, 0, .07);
+  color: var(--secondary);
+}
+
+.session-number .session-icon {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+}
+
+.session-summary-card {
+  text-align: center;
+}
+
+.session-summary-card h3 {
+  min-height: 3.2rem;
+}
+
+.session-summary-card::after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 3px;
+  margin: 1.15rem auto 0;
+  background: var(--secondary-soft);
+}
+
+.session-summary-card.hope,
+.session.hope {
+  background:
+    linear-gradient(180deg, rgba(233, 195, 73, .18), rgba(255, 255, 255, 0) 58%),
+    var(--surface-card);
+  border-color: rgba(233, 195, 73, .48);
+}
+
+.session-summary-card.hope .session-icon,
+.session.hope .session-number {
+  background: rgba(233, 195, 73, .2);
+  color: var(--secondary);
+}
+
+.icon-silence::before {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+}
+
+.icon-water::before {
+  width: 16px;
+  height: 22px;
+  background: var(--secondary);
+  border-radius: 14px 14px 14px 3px;
+  transform: rotate(45deg);
+}
+
+.icon-heart::before,
+.icon-heart::after {
+  width: 13px;
+  height: 20px;
+  background: var(--secondary);
+  border-radius: 13px 13px 0 0;
+  top: 11px;
+}
+
+.icon-heart::before {
+  left: 12px;
+  transform: rotate(-45deg);
+}
+
+.icon-heart::after {
+  right: 12px;
+  transform: rotate(45deg);
+}
+
+.icon-dove::before {
+  width: 24px;
+  height: 15px;
+  border: 2px solid var(--secondary);
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-22deg);
+}
+
+.icon-dove::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--secondary-soft);
+  right: 8px;
+  top: 13px;
+}
+
+.icon-cross::before {
+  width: 3px;
+  height: 24px;
+  background: var(--secondary);
+}
+
+.icon-cross::after {
+  width: 18px;
+  height: 3px;
+  background: var(--secondary);
+  top: 15px;
+}
+
+.icon-branch::before {
+  width: 3px;
+  height: 26px;
+  background: var(--secondary);
+  transform: rotate(28deg);
+}
+
+.icon-branch::after {
+  width: 18px;
+  height: 10px;
+  border: 2px solid var(--secondary);
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 18px 0 0 0;
+  transform: rotate(-18deg);
+  top: 11px;
+  left: 13px;
+}
+
+.icon-flower::before {
+  width: 22px;
+  height: 22px;
+  background:
+    radial-gradient(circle at 50% 16%, var(--secondary) 0 4px, transparent 5px),
+    radial-gradient(circle at 84% 50%, var(--secondary) 0 4px, transparent 5px),
+    radial-gradient(circle at 50% 84%, var(--secondary) 0 4px, transparent 5px),
+    radial-gradient(circle at 16% 50%, var(--secondary) 0 4px, transparent 5px),
+    radial-gradient(circle at 50% 50%, var(--secondary-soft) 0 3px, transparent 4px);
+}
+
+.icon-star::before {
+  content: "\2726";
+  position: static;
+  color: var(--secondary);
+  font-size: 1.45rem;
+  line-height: 1;
 }
 
 .form-panel {
