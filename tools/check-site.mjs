@@ -1,4 +1,4 @@
-import { readdir, readFile, stat } from "node:fs/promises";
+﻿import { readdir, readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -45,8 +45,8 @@ const problems = [];
 for (const file of htmlFiles) {
   const html = await readFile(file, "utf8");
   if (!html.includes('lang="es"')) problems.push(`${file}: missing lang`);
-  if (!html.includes("/assets/site.css")) problems.push(`${file}: missing css`);
-  if (html.includes("Supera tu pérdida")) problems.push(`${file}: unsafe promise copy`);
+  if (!html.includes("assets/site.css")) problems.push(`${file}: missing css`);
+  if (html.includes("Supera tu pÃ©rdida")) problems.push(`${file}: unsafe promise copy`);
 }
 
 if (problems.length) {
@@ -55,3 +55,4 @@ if (problems.length) {
 }
 
 console.log(`Checked ${htmlFiles.length} HTML files and ${required.length} required assets.`);
+
