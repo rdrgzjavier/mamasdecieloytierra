@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Estrella de Mamás de Cielo y Tierra</title>
+  <desc id="desc">Estrella dorada de cuatro puntas.</desc>
+  <path d="M32 7l7.7 17.3L57 32l-17.3 7.7L32 57l-7.7-17.3L7 32l17.3-7.7L32 7z" fill="#735c00"/>
+  <path d="M48 6l2.7 6.1L57 15l-6.3 2.9L48 24l-2.7-6.1L39 15l6.3-2.9L48 6z" fill="#e9c349"/>
+</svg>

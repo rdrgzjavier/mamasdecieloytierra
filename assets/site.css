@@ -3,6 +3,9 @@
   --primary-soft: #0f212b;
   --secondary: #735c00;
   --secondary-soft: #e9c349;
+  --quote-surface: #efeadf;
+  --form-surface: #efe4cf;
+  --form-surface-strong: #d8c7a4;
   --surface: #f9f9f7;
   --surface-low: #f4f4f2;
   --surface-card: #ffffff;
@@ -93,7 +96,20 @@ p {
 .brand {
   display: inline-flex;
   align-items: center;
-  width: 188px;
+  gap: .65rem;
+  width: auto;
+  color: var(--primary);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
 }
 
 .nav-links {
@@ -251,7 +267,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   color: var(--primary);
   font-family: "EB Garamond", Georgia, serif;
@@ -271,6 +288,10 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.06rem;
 }
 
 .lead {
@@ -300,9 +321,24 @@ h3 {
 }
 
 .quote-band {
-  background: var(--surface);
+  position: relative;
+  background: var(--quote-surface);
   color: var(--primary);
   text-align: center;
+}
+
+.quote-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(233, 195, 73, .16), transparent 36%),
+    linear-gradient(180deg, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.quote-band .wrap {
+  position: relative;
 }
 
 .quote-band blockquote {
@@ -511,8 +547,11 @@ h3 {
 }
 
 .form-panel {
-  background: var(--primary);
-  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .38), rgba(255, 255, 255, 0)),
+    var(--form-surface);
+  color: var(--primary);
+  border: 1px solid rgba(115, 92, 0, .22);
   border-radius: var(--radius);
   padding: 2.4rem;
   box-shadow: var(--shadow);
@@ -520,17 +559,32 @@ h3 {
 
 .form-panel h2,
 .form-panel h3 {
-  color: var(--white);
+  color: var(--primary);
 }
 
 .form-panel p,
 .form-panel label,
 .form-panel small {
-  color: rgba(255, 255, 255, .78);
+  color: var(--text-soft);
 }
 
 .form-panel a {
-  color: var(--secondary-soft);
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.form-panel .button {
+  background: var(--white);
+  border-color: rgba(0, 6, 19, .12);
+  color: var(--primary);
+  box-shadow: 0 12px 28px rgba(0, 6, 19, .08);
+}
+
+.form-panel .button:hover,
+.form-panel .button:focus {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
 }
 
 .field {
@@ -549,10 +603,10 @@ textarea,
 select {
   width: 100%;
   min-height: 50px;
-  border: 1px solid rgba(255, 255, 255, .18);
+  border: 1px solid rgba(115, 92, 0, .22);
   border-radius: 14px;
   padding: .8rem .95rem;
-  background: rgba(255, 255, 255, .96);
+  background: rgba(255, 255, 255, .9);
   color: var(--primary);
   font: inherit;
   font-size: .95rem;
@@ -608,9 +662,31 @@ textarea {
   align-items: start;
 }
 
+.footer-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.footer-mark img {
+  width: 34px;
+  height: 34px;
+}
+
 .site-footer a {
   color: var(--text-soft);
   text-decoration: none;
+}
+
+.site-footer .footer-grid > div:first-child > img {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 1rem;
 }
 
 .site-footer a:hover,
@@ -665,10 +741,10 @@ textarea {
   gap: .7rem;
   align-items: center;
   width: min(620px, calc(100% - 2rem));
-  padding: .65rem;
+  padding: .75rem .85rem;
   border: 1px solid rgba(196, 198, 207, .38);
-  border-radius: 999px;
-  background: rgba(249, 249, 247, .94);
+  border-radius: 18px;
+  background: rgba(15, 33, 43, .96);
   box-shadow: var(--shadow);
   transform: translate(-50%, 140%);
   transition: transform .25s ease;
@@ -681,6 +757,16 @@ textarea {
 
 .bottom-bar .button {
   flex: 1;
+}
+
+.bottom-bar .button.secondary {
+  border-color: rgba(255, 255, 255, .56);
+  color: var(--white);
+}
+
+.bottom-bar .button:not(.secondary) {
+  background: var(--white);
+  color: var(--primary);
 }
 
 .legal-text h2 {
@@ -743,7 +829,7 @@ textarea {
   }
 
   .brand {
-    width: 172px;
+    font-size: 1rem;
   }
 
   h1 {
