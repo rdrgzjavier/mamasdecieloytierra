@@ -512,6 +512,24 @@ h4 {
   line-height: 1;
 }
 
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-gold);
+  color: var(--text-soft);
+  font-size: .76rem;
+  font-weight: 700;
+}
+
 .muted {
   color: var(--text-soft);
   font-size: .94rem;
@@ -648,6 +666,10 @@ h4 {
   font-size: .78rem;
   line-height: 1;
   font-weight: 800;
+}
+
+.session-number .session-icon + span {
+  margin-left: .1rem;
 }
 
 .session-icon {
