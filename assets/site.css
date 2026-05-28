@@ -530,19 +530,24 @@ h4 {
 
 .session {
   display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 1.6rem;
+  grid-template-columns: 128px 1fr;
+  gap: 1.8rem;
   align-items: start;
 }
 
 .session-number {
-  display: grid;
-  place-items: center;
-  min-height: 82px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 92px;
+  min-height: 0;
+  padding: .55rem .85rem;
   border-radius: 999px;
   background: rgba(115, 92, 0, .08);
   color: var(--secondary);
   font-size: .78rem;
+  line-height: 1;
   font-weight: 800;
 }
 
@@ -610,6 +615,31 @@ select {
   color: var(--primary);
   font: inherit;
   font-size: .95rem;
+}
+
+select {
+  appearance: none;
+  padding-right: 3rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--primary) 50%),
+    linear-gradient(135deg, var(--primary) 50%, transparent 50%);
+  background-position:
+    calc(100% - 22px) 50%,
+    calc(100% - 16px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+select:invalid {
+  color: rgba(67, 71, 78, .72);
+}
+
+select option {
+  color: var(--primary);
+}
+
+select option[disabled] {
+  color: rgba(67, 71, 78, .72);
 }
 
 input:focus,
@@ -710,9 +740,9 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: .55rem;
-  margin-top: 1.2rem;
-  color: rgba(67, 71, 78, .62);
-  font-size: .68rem;
+  margin-top: .7rem;
+  color: rgba(67, 71, 78, .56);
+  font-size: .62rem;
   font-weight: 800;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -720,10 +750,10 @@ textarea {
 }
 
 .made-by img {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  opacity: .52;
+  opacity: .48;
   transition: opacity .35s ease;
 }
 
@@ -737,18 +767,17 @@ textarea {
   left: 50%;
   bottom: 1rem;
   z-index: 12;
-  display: flex;
+  display: none;
   gap: .7rem;
   align-items: center;
-  width: min(620px, calc(100% - 2rem));
-  padding: .75rem .85rem;
-  border: 1px solid rgba(196, 198, 207, .38);
-  border-radius: 18px;
-  background: rgba(15, 33, 43, .96);
-  box-shadow: var(--shadow);
+  width: min(420px, calc(100% - 2rem));
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   transform: translate(-50%, 140%);
   transition: transform .25s ease;
-  backdrop-filter: blur(16px);
 }
 
 .bottom-bar.visible {
@@ -765,8 +794,9 @@ textarea {
 }
 
 .bottom-bar .button:not(.secondary) {
-  background: var(--white);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 14px 36px rgba(0, 6, 19, .2);
 }
 
 .legal-text h2 {
@@ -793,6 +823,8 @@ textarea {
   .nav-links.open {
     display: grid;
     gap: .9rem;
+    justify-items: center;
+    text-align: center;
   }
 
   .grid.two,
@@ -816,6 +848,11 @@ textarea {
   #sobre-mi .split > div:not(.portrait-placeholder),
   #quien-acompana .split > div:not(.portrait-placeholder) {
     padding: 2rem;
+  }
+
+  .bottom-bar {
+    display: flex;
+    align-items: stretch;
   }
 }
 

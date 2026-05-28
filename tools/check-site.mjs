@@ -12,8 +12,8 @@ const required = [
   "politica-privacidad/index.html",
   "assets/site.css",
   "assets/site.js",
-  "assets/logo.svg",
-  "assets/aripa-loop.svg"
+  "assets/star.svg",
+  "assets/aripa-loop-navy.png"
 ];
 
 for (const file of required) {
