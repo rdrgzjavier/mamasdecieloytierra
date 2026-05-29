@@ -1553,3 +1553,20 @@ textarea {
   display: block !important;
 }
 /* End final requested polish */
+/* Eyebrow gold consistency 2026-05-29 */
+.eyebrow,
+p.eyebrow,
+.section-head .eyebrow,
+.split > div > .eyebrow,
+.narrow > .eyebrow,
+.reviews-section .eyebrow,
+.gold-eyebrow {
+  color: var(--secondary) !important;
+}
+
+.section-head .eyebrow::before,
+.split > div > .eyebrow::before,
+.narrow > .eyebrow::before {
+  background: var(--line-gold) !important;
+}
+/* End eyebrow gold consistency */
