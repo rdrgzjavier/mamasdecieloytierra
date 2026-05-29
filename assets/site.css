@@ -1442,4 +1442,42 @@ textarea {
   opacity: 1 !important;
   overflow: visible;
 }
+
+.review-grid {
+  align-items: stretch;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+
+.review-card .stars {
+  color: var(--secondary);
+  font-size: 1rem;
+  letter-spacing: .08em;
+}
+
+.review-card p {
+  margin: 0;
+  color: var(--primary);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.review-card cite {
+  margin-top: auto;
+  color: var(--text-soft);
+  font-style: normal;
+  font-weight: 700;
+  font-size: .82rem;
+}
+
+.review-source {
+  margin-top: 1.2rem;
+  color: var(--text-soft);
+  font-size: .86rem;
+}
 /* End final stable home inline icons */
