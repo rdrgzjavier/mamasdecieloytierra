@@ -1402,3 +1402,26 @@ textarea {
   stroke-linejoin: round;
 }
 /* End Home SVG session icons */
+/* Home SVG session icons stable 2026-05-29 */
+.session-summary-card .session-icon.icon-svg {
+  color: var(--secondary);
+}
+
+.session-summary-card .session-icon.icon-svg::before,
+.session-summary-card .session-icon.icon-svg::after {
+  content: none !important;
+}
+
+.session-summary-card .session-icon.icon-svg svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: none !important;
+  stroke: var(--secondary) !important;
+}
+
+.session-summary-card .session-icon.icon-svg-small svg {
+  width: 20px;
+  height: 20px;
+}
+/* End Home SVG session icons stable */
