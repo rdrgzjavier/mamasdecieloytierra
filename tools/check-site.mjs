@@ -13,7 +13,8 @@ const required = [
   "assets/site.css",
   "assets/site.js",
   "assets/star.svg",
-  "assets/aripa-loop-navy.png"
+  "assets/aripa-loop-navy.png",
+  "assets/elena-gallo-molto.jpg"
 ];
 
 for (const file of required) {

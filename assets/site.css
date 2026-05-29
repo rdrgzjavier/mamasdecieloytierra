@@ -461,6 +461,7 @@ h4 {
 
 .icon-glyph-star::before {
   content: "\2726";
+  display: block;
   color: var(--secondary);
   font-size: 1.2rem;
   line-height: 1;
@@ -468,6 +469,7 @@ h4 {
 
 .icon-glyph-circle::before {
   content: "";
+  display: block;
   width: 14px;
   height: 14px;
   border: 2px solid var(--secondary);
@@ -658,7 +660,7 @@ h4 {
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(249, 249, 247, .04), rgba(0, 6, 19, .36)),
-    url("https://pixel-p2.s3.eu-central-1.amazonaws.com/doctor/avatar/63453f56/63453f56-dc96-4942-9b88-5a16b34a8bfb_large.jpg");
+    url("elena-gallo-molto.jpg");
   background-size: cover;
   background-position: center top;
   color: var(--white);
@@ -670,6 +672,18 @@ h4 {
   max-width: 420px;
   color: rgba(255, 255, 255, .9);
   font-size: .9rem;
+}
+
+.credential-grid {
+  margin-top: 2rem;
+}
+
+.credential-card {
+  padding: 1.4rem;
+}
+
+.credential-card h3 {
+  font-size: 1.25rem;
 }
 
 #sobre-mi .split,
