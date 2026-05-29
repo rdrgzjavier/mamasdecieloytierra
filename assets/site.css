@@ -1570,3 +1570,25 @@ p.eyebrow,
   background: var(--line-gold) !important;
 }
 /* End eyebrow gold consistency */
+/* Force all eyebrows gold 2026-05-29 */
+body .eyebrow,
+body p.eyebrow,
+body .section .eyebrow,
+body .section-head .eyebrow,
+body .wrap .eyebrow,
+body .split .eyebrow,
+body .narrow .eyebrow,
+body #programa .eyebrow,
+body #sesiones .eyebrow,
+body #como-funciona .eyebrow,
+body #sobre-mi .eyebrow,
+body .reviews-section .eyebrow {
+  color: var(--secondary) !important;
+}
+
+body .section-head .eyebrow::before,
+body .split > div > .eyebrow::before,
+body .narrow > .eyebrow::before {
+  background: var(--line-gold) !important;
+}
+/* End force all eyebrows gold */
