@@ -1524,3 +1524,32 @@ textarea {
   font-size: .86rem;
 }
 /* End opinions polish */
+/* Final requested polish 2026-05-29 */
+.gold-eyebrow,
+.reviews-section .gold-eyebrow {
+  color: var(--secondary);
+}
+
+.narrow > h2 + p {
+  margin-top: 1.25rem;
+}
+
+.session-number .home-inline-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+  transform: none;
+}
+
+.session-number .home-inline-icon::before,
+.session-number .home-inline-icon::after {
+  content: none !important;
+  display: none !important;
+}
+
+.session-number .home-inline-icon svg {
+  display: block !important;
+}
+/* End final requested polish */
