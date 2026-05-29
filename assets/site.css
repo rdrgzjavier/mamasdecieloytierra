@@ -1615,3 +1615,23 @@ html body .narrow > p.eyebrow::before {
   background: #e9c349 !important;
 }
 /* End definitive eyebrow gold */
+/* Program inline icons 3 and 5 2026-05-29 */
+.session-number .program-inline-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+  transform: none;
+}
+
+.session-number .program-inline-icon::before,
+.session-number .program-inline-icon::after {
+  content: none !important;
+  display: none !important;
+}
+
+.session-number .program-inline-icon svg {
+  display: block;
+}
+/* End program inline icons 3 and 5 */
