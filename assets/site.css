@@ -1425,3 +1425,21 @@ textarea {
   height: 20px;
 }
 /* End Home SVG session icons stable */
+/* Final stable home inline icons 2026-05-29 */
+.session-summary-card .home-inline-icon {
+  color: var(--secondary);
+}
+
+.session-summary-card .home-inline-icon::before,
+.session-summary-card .home-inline-icon::after {
+  content: none !important;
+  display: none !important;
+}
+
+.session-summary-card .home-inline-icon svg {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible;
+}
+/* End final stable home inline icons */
