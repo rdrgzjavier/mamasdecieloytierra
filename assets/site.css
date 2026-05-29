@@ -1381,3 +1381,24 @@ textarea {
   transform: rotate(-18deg);
 }
 /* End icon refinement */
+/* Home SVG session icons 2026-05-29 */
+.session-icon.icon-svg {
+  color: var(--secondary);
+}
+
+.session-icon.icon-svg::before,
+.session-icon.icon-svg::after {
+  content: none;
+}
+
+.session-icon.icon-svg svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* End Home SVG session icons */
