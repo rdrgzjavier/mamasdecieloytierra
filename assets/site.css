@@ -1592,3 +1592,26 @@ body .narrow > .eyebrow::before {
   background: var(--line-gold) !important;
 }
 /* End force all eyebrows gold */
+/* Definitive eyebrow gold 2026-05-29 */
+html body p.eyebrow,
+html body .eyebrow,
+html body main .eyebrow,
+html body main p.eyebrow,
+html body main section .eyebrow,
+html body main section p.eyebrow,
+html body #programa p.eyebrow,
+html body #sesiones p.eyebrow,
+html body #como-funciona p.eyebrow,
+html body .section-head > p.eyebrow,
+html body .split p.eyebrow,
+html body .narrow > p.eyebrow {
+  color: #735c00 !important;
+  -webkit-text-fill-color: #735c00 !important;
+}
+
+html body .section-head > p.eyebrow::before,
+html body .split > div > p.eyebrow::before,
+html body .narrow > p.eyebrow::before {
+  background: #e9c349 !important;
+}
+/* End definitive eyebrow gold */
