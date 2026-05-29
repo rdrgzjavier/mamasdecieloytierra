@@ -1284,3 +1284,100 @@ textarea {
     width: 64px;
   }
 }
+/* Icon refinement 2026-05-29 */
+.session-number {
+  align-items: center;
+  gap: .5rem;
+}
+
+.session-number .session-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  background: transparent;
+  transform: scale(.76);
+  transform-origin: center;
+}
+
+.session-number .session-icon + span {
+  margin-left: 0;
+  line-height: 1;
+}
+
+.icon-voice::before {
+  width: 22px;
+  height: 15px;
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  top: 11px;
+  left: 9px;
+}
+
+.icon-voice::after {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  bottom: 10px;
+  left: 15px;
+  transform: rotate(-24deg);
+}
+
+.icon-body::before {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--secondary);
+  border-radius: 50%;
+  top: 8px;
+  left: 14px;
+}
+
+.icon-body::after {
+  width: 20px;
+  height: 15px;
+  border: 2px solid var(--secondary);
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+  top: 20px;
+  left: 9px;
+}
+
+.icon-infinity::before {
+  content: "âˆž";
+  position: static;
+  display: block;
+  color: var(--secondary);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.icon-infinity::after {
+  content: none;
+}
+
+.icon-seed::before {
+  width: 2px;
+  height: 23px;
+  background: var(--secondary);
+  border-radius: 999px;
+  left: 20px;
+  top: 10px;
+  transform: rotate(8deg);
+}
+
+.icon-seed::after {
+  width: 17px;
+  height: 11px;
+  border: 2px solid var(--secondary);
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0 18px 0 0;
+  left: 18px;
+  top: 14px;
+  transform: rotate(-18deg);
+}
+/* End icon refinement */
