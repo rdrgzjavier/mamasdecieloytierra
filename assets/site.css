@@ -1344,7 +1344,7 @@ textarea {
 }
 
 .icon-infinity::before {
-  content: "âˆž";
+  content: "\221E";
   position: static;
   display: block;
   color: var(--secondary);
