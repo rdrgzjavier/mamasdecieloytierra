@@ -227,7 +227,7 @@ p {
   left: 50%;
   top: clamp(3.5rem, 12vh, 7rem);
   z-index: 1;
-  width: clamp(92px, 10vw, 132px);
+  width: clamp(184px, 20vw, 264px);
   aspect-ratio: 1;
   background: url("mamas-cielo-tierra-isotipo.png") center / contain no-repeat;
   border-radius: 50%;
