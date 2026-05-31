@@ -123,6 +123,10 @@ p {
   flex: 0 0 auto;
 }
 
+.brand span {
+  white-space: nowrap;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -215,31 +219,22 @@ p {
   align-items: center;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(249, 249, 247, .3), rgba(249, 249, 247, .72) 44%, rgba(249, 249, 247, .54)),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 1000'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%23fff8ec'/%3E%3Cstop offset='.52' stop-color='%23d9d1c3'/%3E%3Cstop offset='1' stop-color='%23bbb5aa'/%3E%3C/linearGradient%3E%3Cfilter id='b'%3E%3CfeGaussianBlur stdDeviation='9'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='1600' height='1000' fill='url(%23g)'/%3E%3Crect x='0' y='0' width='420' height='1000' fill='%23fffaf1' opacity='.72'/%3E%3Cg opacity='.36' filter='url(%23b)'%3E%3Crect x='70' y='60' width='250' height='720' fill='%23ffffff'/%3E%3Crect x='118' y='60' width='9' height='720' fill='%23cbbd9e'/%3E%3Crect x='244' y='60' width='9' height='720' fill='%23cbbd9e'/%3E%3Crect x='70' y='310' width='250' height='8' fill='%23cbbd9e'/%3E%3C/g%3E%3Cellipse cx='620' cy='790' rx='320' ry='90' fill='%238d806f' opacity='.18'/%3E%3Cpath d='M365 760h480l-84 72H280z' fill='%23998870' opacity='.5'/%3E%3Crect x='430' y='560' width='350' height='210' rx='8' fill='%23b5a68f' opacity='.5'/%3E%3Crect x='780' y='525' width='270' height='300' rx='36' fill='%23384955' opacity='.28'/%3E%3Ccircle cx='640' cy='520' r='44' fill='%23f9f9f7' opacity='.7'/%3E%3C/g%3E%3C/svg%3E");
+    linear-gradient(90deg, rgba(249, 249, 247, .76), rgba(249, 249, 247, .66) 48%, rgba(249, 249, 247, .52)),
+    url("hero-background-serene.png");
   background-size: cover;
   background-position: center;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: clamp(3.5rem, 12vh, 7rem);
-  z-index: 1;
-  width: clamp(184px, 20vw, 264px);
-  aspect-ratio: 1;
-  background: url("mamas-cielo-tierra-isotipo.png") center / contain no-repeat;
-  border-radius: 50%;
-  transform: translateX(-50%);
+  display: none;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(249, 249, 247, .34);
-  backdrop-filter: blur(1.5px);
+  background: rgba(249, 249, 247, .2);
+  backdrop-filter: blur(1px);
 }
 
 .hero-content {
@@ -1257,8 +1252,7 @@ textarea {
   }
 
   .hero::before {
-    top: 4rem;
-    width: 92px;
+    display: none;
   }
 
   .actions,
