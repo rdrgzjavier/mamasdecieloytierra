@@ -15,6 +15,7 @@ const noindex = [
 ];
 const all = [...indexed, ...noindex];
 const problems = [];
+const canonicalOrigin = "https://mamasdecieloytierra.com";
 
 function count(text, pattern) {
   return (text.match(pattern) || []).length;
@@ -45,6 +46,12 @@ for (const file of all) {
       problems.push(`${file}: invalid JSON-LD`);
     }
   }
+  if (html.includes("https://www.mamasdecieloytierra.com")) {
+    problems.push(`${file}: www canonical URLs are not allowed`);
+  }
+  if (!html.includes(canonicalOrigin)) {
+    problems.push(`${file}: canonical origin missing`);
+  }
   if (indexed.includes(file) && html.includes('content="noindex')) {
     problems.push(`${file}: indexable page marked noindex`);
   }
@@ -56,19 +63,19 @@ for (const file of all) {
 const sitemap = await readFile(join(root, "sitemap.xml"), "utf8");
 for (const file of indexed) {
   const suffix = file === "index.html" ? "/" : `/${file.replace("index.html", "")}`;
-  if (!sitemap.includes(`<loc>https://www.mamasdecieloytierra.com${suffix}</loc>`)) {
+  if (!sitemap.includes(`<loc>https://mamasdecieloytierra.com${suffix}</loc>`)) {
     problems.push(`sitemap.xml: missing ${suffix}`);
   }
 }
 for (const file of noindex) {
   const suffix = `/${file.replace("index.html", "")}`;
-  if (sitemap.includes(`<loc>https://www.mamasdecieloytierra.com${suffix}</loc>`)) {
+  if (sitemap.includes(`<loc>https://mamasdecieloytierra.com${suffix}</loc>`)) {
     problems.push(`sitemap.xml: noindex URL included ${suffix}`);
   }
 }
 
 const robots = await readFile(join(root, "robots.txt"), "utf8");
-if (!robots.includes("Sitemap: https://www.mamasdecieloytierra.com/sitemap.xml")) {
+if (!robots.includes("Sitemap: https://mamasdecieloytierra.com/sitemap.xml")) {
   problems.push("robots.txt: missing sitemap URL");
 }
 

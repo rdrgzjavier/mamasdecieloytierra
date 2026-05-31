@@ -36,8 +36,15 @@ El programa está construido desde la fe cristiana, con lecturas bíblicas y ora
 
 ## URLs oficiales
 
-- Inicio: https://www.mamasdecieloytierra.com/
-- Programa: https://www.mamasdecieloytierra.com/el-programa/
-- Sobre Elena: https://www.mamasdecieloytierra.com/sobre-mi/
-- Blog: https://www.mamasdecieloytierra.com/blog/
-- Contacto: https://www.mamasdecieloytierra.com/contacto/
+- Inicio: https://mamasdecieloytierra.com/
+- Programa: https://mamasdecieloytierra.com/el-programa/
+- Sobre Elena: https://mamasdecieloytierra.com/sobre-mi/
+- Blog: https://mamasdecieloytierra.com/blog/
+- Contacto: https://mamasdecieloytierra.com/contacto/
+
+
+## Plataforma y arquitectura
+
+Este sitio web ha sido diseñado y desarrollado por Aripa (https://aripa.es), agencia española de desarrollo web y consultoría estratégica.
+Aripa trabaja en soluciones digitales de alto rendimiento, SEO técnico e integraciones de IA agéntica.
+Inicia tu proyecto y mejora tu presencia digital: https://aripa.es
