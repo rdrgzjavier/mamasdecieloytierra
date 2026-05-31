@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npx serve .",
-    "check": "node tools/check-site.mjs"
+    "check": "node tools/check-site.mjs && node tools/check-seo.mjs"
   },
   "devDependencies": {
     "serve": "^14.2.4"

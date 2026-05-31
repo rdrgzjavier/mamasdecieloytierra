@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.mamasdecieloytierra.com/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/el-programa/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/sobre-mi/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/blog/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/contacto/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/aviso-legal/</loc></url>
-  <url><loc>https://www.mamasdecieloytierra.com/politica-privacidad/</loc></url>
+  <url>
+    <loc>https://www.mamasdecieloytierra.com/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mamasdecieloytierra.com/el-programa/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mamasdecieloytierra.com/sobre-mi/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mamasdecieloytierra.com/blog/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.mamasdecieloytierra.com/contacto/</loc>
+    <lastmod>2026-05-31</lastmod>
+  </url>
 </urlset>

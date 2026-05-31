@@ -1,4 +1,4 @@
-﻿import { readdir, readFile, stat } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -12,9 +12,14 @@ const required = [
   "politica-privacidad/index.html",
   "assets/site.css",
   "assets/site.js",
-  "assets/star.svg",
+  "assets/mamas-cielo-tierra-isotipo.png",
+  "assets/hero-background-serene.png",
   "assets/aripa-loop-navy.png",
-  "assets/elena-gallo-molto.jpg"
+  "assets/elena-gallo-molto.jpg",
+  "sitemap.xml",
+  "robots.txt",
+  "llms.txt",
+  "llms-full.txt"
 ];
 
 for (const file of required) {
@@ -47,7 +52,7 @@ for (const file of htmlFiles) {
   const html = await readFile(file, "utf8");
   if (!html.includes('lang="es"')) problems.push(`${file}: missing lang`);
   if (!html.includes("assets/site.css")) problems.push(`${file}: missing css`);
-  if (html.includes("Supera tu pÃ©rdida")) problems.push(`${file}: unsafe promise copy`);
+  if (html.includes("Supera tu pérdida")) problems.push(`${file}: unsafe promise copy`);
 }
 
 if (problems.length) {

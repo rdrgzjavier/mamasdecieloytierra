@@ -1,0 +1,23 @@
+# Mamás de Cielo y Tierra
+
+> Mamás de Cielo y Tierra es un proyecto de acompañamiento espiritual y emocional en el duelo gestacional y perinatal desde la fe cristiana. Está impulsado por Elena Gallo Moltó, psicóloga colegiada M-25624 y neuropsicóloga. El programa no sustituye atención médica, psicológica o psiquiátrica profesional.
+
+Información esencial:
+- El proyecto utiliza un lenguaje respetuoso: los hijos existen, son amados y ocupan un lugar para siempre.
+- Pepe es hijo de Elena. Falleció al nacer y su vida sigue formando parte de la historia de su familia.
+- El programa propone un acompañamiento online semanal de ocho sesiones desde la fe cristiana.
+- Las fechas, plazas, precio y modalidad concreta de cada edición deben confirmarse mediante el formulario de contacto.
+
+## Contenido principal
+
+- [Inicio](https://www.mamasdecieloytierra.com/): presentación del proyecto, características del programa y preguntas frecuentes.
+- [El programa](https://www.mamasdecieloytierra.com/el-programa/): recorrido online de ocho sesiones, oración, ejercicios concretos y manual de acompañamiento.
+- [Sobre Elena Gallo Moltó](https://www.mamasdecieloytierra.com/sobre-mi/): perfil profesional, origen del proyecto e historia de su hijo Pepe.
+- [Blog](https://www.mamasdecieloytierra.com/blog/): recursos sobre duelo gestacional, duelo perinatal, fe, memoria y esperanza.
+- [Contacto](https://www.mamasdecieloytierra.com/contacto/): solicitud de información sobre próximas ediciones.
+
+## Optional
+
+- [Contexto ampliado para sistemas de IA](https://www.mamasdecieloytierra.com/llms-full.txt): resumen extendido de entidades, programa y preguntas frecuentes.
+- [Aviso legal](https://www.mamasdecieloytierra.com/aviso-legal/)
+- [Política de privacidad](https://www.mamasdecieloytierra.com/politica-privacidad/)
