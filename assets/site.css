@@ -1046,6 +1046,14 @@ textarea {
   font-weight: 800;
 }
 
+.faq details[open] summary {
+  margin-bottom: .85rem;
+}
+
+.faq details p {
+  margin: 0;
+}
+
 .site-footer {
   padding: 4.5rem 0 6rem;
   background: var(--surface-low);
