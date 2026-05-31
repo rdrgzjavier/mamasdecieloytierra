@@ -1672,3 +1672,55 @@ html body .narrow > p.eyebrow::before {
   border-radius: 0 3px 3px 0;
   border-left-width: 1px;
 }
+
+.personal-story-section {
+  position: relative;
+  background: var(--quote-surface);
+  overflow: hidden;
+}
+
+.personal-story-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(233, 195, 73, .14), transparent 42%);
+  pointer-events: none;
+}
+
+.personal-story-section .narrow {
+  position: relative;
+}
+
+.personal-story-section h2 {
+  max-width: 700px;
+}
+
+.personal-story-copy {
+  max-width: 760px;
+  margin-top: 1.4rem;
+}
+
+.personal-story-copy .lead {
+  color: var(--primary);
+}
+
+.personal-story-note {
+  max-width: 620px;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(115, 92, 0, .24);
+  color: var(--secondary);
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.personal-story-link {
+  display: inline-flex;
+  margin-top: .5rem;
+  color: var(--secondary);
+  font-size: .78rem;
+  font-weight: 800;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .24rem;
+}
