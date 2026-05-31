@@ -19,8 +19,7 @@ const required = [
   "sitemap.xml",
   "robots.txt",
   "llms.txt",
-  "llms-full.txt",
-  "CNAME"
+  "llms-full.txt"
 ];
 
 for (const file of required) {
