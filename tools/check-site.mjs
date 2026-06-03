@@ -16,6 +16,7 @@ const required = [
   "assets/hero-background-serene.png",
   "assets/aripa-loop-navy.png",
   "assets/elena-gallo-molto.jpg",
+  "assets/elena-gallo-psicologa.jpg",
   "sitemap.xml",
   "robots.txt",
   "llms.txt",
