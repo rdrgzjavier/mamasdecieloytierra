@@ -1481,7 +1481,7 @@ textarea {
 }
 
 .review-card .stars {
-  color: var(--secondary);
+  color: var(--secondary-soft);
   font-size: 1rem;
   letter-spacing: .08em;
 }
@@ -1524,7 +1524,7 @@ textarea {
 }
 
 .review-card .stars {
-  color: var(--secondary);
+  color: var(--secondary-soft);
   font-size: 1rem;
   letter-spacing: .08em;
 }
