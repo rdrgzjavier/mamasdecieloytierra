@@ -714,6 +714,11 @@ h4 {
   background-position: center 20%;
 }
 
+.portrait-elena-home {
+  background-image: url("elena-gallo-home.jpeg");
+  background-position: center 24%;
+}
+
 .steps {
   counter-reset: step;
 }
