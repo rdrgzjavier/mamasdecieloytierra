@@ -709,7 +709,7 @@ h4 {
   box-shadow: none;
 }
 
-#sobre-mi .portrait-elena-psicologa {
+.portrait-elena-psicologa {
   background-image: url("elena-gallo-psicologa.jpg");
   background-position: center 20%;
 }
