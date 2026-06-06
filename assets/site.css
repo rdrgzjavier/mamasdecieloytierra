@@ -156,11 +156,22 @@ p {
   display: none;
   width: 42px;
   height: 42px;
+  padding: 0;
   border: 1px solid var(--line-gold);
   border-radius: 10px;
   background: rgba(255, 255, 255, .72);
   color: var(--primary);
-  font-size: 1.1rem;
+  font-size: 0;
+  line-height: 1;
+}
+
+.menu-toggle::before {
+  content: "\2630";
+  display: block;
+  color: var(--primary);
+  font-size: 1.12rem;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 
 .button {
@@ -1204,6 +1215,7 @@ textarea {
   .menu-toggle {
     display: inline-grid;
     place-items: center;
+    align-content: center;
   }
 
   .nav-links {
