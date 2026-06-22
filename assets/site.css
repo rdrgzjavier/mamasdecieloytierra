@@ -1754,3 +1754,63 @@ html body .narrow > p.eyebrow::before {
   text-decoration-thickness: 1px;
   text-underline-offset: .24rem;
 }
+
+
+.form-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgba(0, 6, 19, .38);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+.form-modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-modal__panel {
+  width: min(520px, 100%);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--radius);
+  background: var(--surface-card);
+  box-shadow: var(--shadow);
+  padding: clamp(1.5rem, 4vw, 2.3rem);
+  text-align: center;
+}
+
+.form-modal__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: rgba(233, 195, 73, .22);
+  color: var(--secondary);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.form-modal h2 {
+  margin: 0 0 .6rem;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.05;
+  color: var(--primary);
+}
+
+.form-modal p {
+  margin: 0 auto 1.3rem;
+  color: var(--text-soft);
+}
+
+.form-panel.is-sending {
+  opacity: .72;
+  pointer-events: none;
+}
