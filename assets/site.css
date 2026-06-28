@@ -364,6 +364,7 @@ h4 {
 
 .quote-band {
   position: relative;
+  overflow: hidden;
   background: var(--quote-surface);
   color: var(--primary);
   text-align: center;
@@ -379,8 +380,23 @@ h4 {
   pointer-events: none;
 }
 
+.quote-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .38;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='178' height='118' viewBox='0 0 178 118' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' opacity='.92'%3E%3Cpath d='M88 61C67 24 26 10 11 27c-15 17 16 49 73 43'/%3E%3Cpath d='M91 60c23-35 65-46 78-27 13 20-22 48-75 38'/%3E%3Cpath d='M87 63c-23 10-46 30-38 43 8 13 30 3 43-37'/%3E%3Cpath d='M94 64c22 13 42 34 33 46-10 12-31-1-38-40'/%3E%3Cpath d='M89 58c3 18 2 33-4 45'/%3E%3Cpath d='M88 55c-8-14-13-24-28-32M96 55c10-13 19-20 34-25'/%3E%3Cpath d='M83 52c7 6 13 11 18 18' opacity='.55'/%3E%3Cpath d='M46 34c12 8 22 17 31 29M135 38c-11 9-23 18-36 27' opacity='.45'/%3E%3C/g%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg width='102' height='76' viewBox='0 0 102 76' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d6c8b8' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round' opacity='.72'%3E%3Cpath d='M50 40C35 15 11 9 5 21c-6 12 14 30 43 24'/%3E%3Cpath d='M53 40c15-24 39-29 44-16 5 13-17 29-42 22'/%3E%3Cpath d='M49 42c-14 8-23 22-16 27 7 5 17-4 20-23'/%3E%3Cpath d='M55 43c13 8 22 21 15 26-7 5-16-4-19-22'/%3E%3Cpath d='M51 38c2 11 1 21-3 30'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: clamp(130px, 18vw, 230px) auto, clamp(82px, 10vw, 132px) auto;
+  background-position: 8% 26%, 87% 72%;
+}
+
 .quote-band .wrap {
   position: relative;
+  z-index: 1;
 }
 
 .quote-band blockquote {
@@ -1813,4 +1829,28 @@ html body .narrow > p.eyebrow::before {
 .form-panel.is-sending {
   opacity: .72;
   pointer-events: none;
+}
+
+
+@media (max-width: 720px) {
+  .quote-band::after {
+    opacity: .26;
+    background-size: 128px auto, 78px auto;
+    background-position: -28px 18%, calc(100% + 24px) 82%;
+  }
+}
+/* End quote-band butterfly mobile */
+
+
+.icon-butterfly svg {
+  display: block !important;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+}
+
+.icon-butterfly::before,
+.icon-butterfly::after {
+  content: none !important;
+  display: none !important;
 }
