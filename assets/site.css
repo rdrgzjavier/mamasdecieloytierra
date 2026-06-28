@@ -1899,6 +1899,11 @@ html body .narrow > p.eyebrow::before {
   overflow: visible;
 }
 
+.session-number .icon-butterfly svg {
+  width: 22px;
+  height: 22px;
+}
+
 .icon-butterfly::before,
 .icon-butterfly::after {
   content: none !important;
