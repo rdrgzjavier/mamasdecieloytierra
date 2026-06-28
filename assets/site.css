@@ -255,6 +255,7 @@ p {
   margin: 2rem auto 0;
   padding: 0;
   text-align: center;
+  transform: translateY(-64px);
 }
 
 .hero .eyebrow {
@@ -387,8 +388,8 @@ h4 {
   pointer-events: none;
   opacity: .38;
   background-image:
-    url("data:image/svg+xml,%3Csvg width='178' height='118' viewBox='0 0 178 118' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' opacity='.92'%3E%3Cpath d='M88 61C67 24 26 10 11 27c-15 17 16 49 73 43'/%3E%3Cpath d='M91 60c23-35 65-46 78-27 13 20-22 48-75 38'/%3E%3Cpath d='M87 63c-23 10-46 30-38 43 8 13 30 3 43-37'/%3E%3Cpath d='M94 64c22 13 42 34 33 46-10 12-31-1-38-40'/%3E%3Cpath d='M89 58c3 18 2 33-4 45'/%3E%3Cpath d='M88 55c-8-14-13-24-28-32M96 55c10-13 19-20 34-25'/%3E%3Cpath d='M83 52c7 6 13 11 18 18' opacity='.55'/%3E%3Cpath d='M46 34c12 8 22 17 31 29M135 38c-11 9-23 18-36 27' opacity='.45'/%3E%3C/g%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg width='102' height='76' viewBox='0 0 102 76' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d6c8b8' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round' opacity='.72'%3E%3Cpath d='M50 40C35 15 11 9 5 21c-6 12 14 30 43 24'/%3E%3Cpath d='M53 40c15-24 39-29 44-16 5 13-17 29-42 22'/%3E%3Cpath d='M49 42c-14 8-23 22-16 27 7 5 17-4 20-23'/%3E%3Cpath d='M55 43c13 8 22 21 15 26-7 5-16-4-19-22'/%3E%3Cpath d='M51 38c2 11 1 21-3 30'/%3E%3C/g%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg%20width%3D%22210%22%20height%3D%22142%22%20viewBox%3D%220%200%20210%20142%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.9%22%3E%3Cpath%20d%3D%22M101%2068C87%2031%2045%206%2019%2018%201%2026%207%2056%2035%2070c21%2010%2044%206%2066-2Z%22%2F%3E%3Cpath%20d%3D%22M109%2068c14-37%2056-62%2082-50%2018%208%2012%2038-16%2052-21%2010-44%206-66-2Z%22%2F%3E%3Cpath%20d%3D%22M98%2072C69%2076%2043%2096%2051%20117c7%2018%2038%208%2051-38Z%22%2F%3E%3Cpath%20d%3D%22M112%2072c29%204%2055%2024%2047%2045-7%2018-38%208-51-38Z%22%2F%3E%3Cpath%20d%3D%22M103%2061c4%2018%203%2038-3%2058%22%2F%3E%3Cpath%20d%3D%22M108%2061c-2%2018%200%2038%207%2058%22%2F%3E%3Cpath%20d%3D%22M101%2058C89%2034%2070%2022%2048%2019M111%2058c12-24%2031-36%2053-39%22%20opacity%3D%22.7%22%2F%3E%3Cpath%20d%3D%22M42%2034c17%209%2034%2020%2051%2032M168%2034c-17%209-34%2020-51%2032%22%20opacity%3D%22.58%22%2F%3E%3Cpath%20d%3D%22M33%2054c20%203%2039%208%2057%2013M177%2054c-20%203-39%208-57%2013%22%20opacity%3D%22.48%22%2F%3E%3Cpath%20d%3D%22M76%2083c8%208%2016%2018%2024%2031M134%2083c-8%208-16%2018-24%2031%22%20opacity%3D%22.5%22%2F%3E%3Cpath%20d%3D%22M99%2058c-6-11-13-17-23-21M111%2058c6-11%2013-17%2023-21%22%20opacity%3D%22.55%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"),
+    url("data:image/svg+xml,%3Csvg%20width%3D%22112%22%20height%3D%2282%22%20viewBox%3D%220%200%20112%2082%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23d6c8b8%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.74%22%3E%3Cpath%20d%3D%22M53%2041C44%2018%2018%205%207%2015c-9%208%202%2027%2020%2032%2010%203%2020%201%2028-5Z%22%2F%3E%3Cpath%20d%3D%22M59%2041c9-23%2035-36%2046-26%209%208-2%2027-20%2032-10%203-20%201-28-5Z%22%2F%3E%3Cpath%20d%3D%22M52%2044c-17%204-28%2016-22%2027%206%2010%2022%201%2025-24Z%22%2F%3E%3Cpath%20d%3D%22M60%2044c17%204%2028%2016%2022%2027-6%2010-22%201-25-24Z%22%2F%3E%3Cpath%20d%3D%22M54%2038c2%2011%201%2023-3%2035M59%2038c-1%2011%200%2023%205%2035%22%2F%3E%3Cpath%20d%3D%22M28%2023c10%206%2018%2012%2025%2018M84%2023c-10%206-18%2012-25%2018%22%20opacity%3D%22.55%22%2F%3E%3Cpath%20d%3D%22M25%2039c9%201%2018%203%2027%205M87%2039c-9%201-18%203-27%205%22%20opacity%3D%22.45%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-size: clamp(130px, 18vw, 230px) auto, clamp(82px, 10vw, 132px) auto;
   background-position: 8% 26%, 87% 72%;
@@ -1269,6 +1270,10 @@ textarea {
     min-height: 720px;
   }
 
+  .hero-content {
+    transform: translateY(-52px);
+  }
+
   #sobre-mi .split > div:not(.portrait-placeholder),
   #quien-acompana .split > div:not(.portrait-placeholder) {
     padding: 2rem;
@@ -1303,6 +1308,10 @@ textarea {
 
   .hero {
     min-height: 680px;
+  }
+
+  .hero-content {
+    transform: translateY(-40px);
   }
 
   .hero::before {
