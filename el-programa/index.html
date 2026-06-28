@@ -75,6 +75,14 @@
       "audience": {
         "@type": "Audience",
         "audienceType": "Madres que atraviesan un duelo gestacional o perinatal, reciente o vivido hace años"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Reserva del programa Mamás de Cielo y Tierra",
+        "price": "299",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://mamasdecieloytierra.com/el-programa/#reserva"
       }
     },
     {
@@ -121,7 +129,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/site.css?v=20260628j">
+    <link rel="stylesheet" href="../assets/site.css?v=20260628k">
   </head>
   <body>
     <header class="site-header">
@@ -139,7 +147,7 @@
           <p class="eyebrow">El programa</p>
           <h1>Ocho sesiones para integrar, no superar</h1>
           <p class="lead">En cada sesión abrimos un espacio distinto del dolor para iluminarlo con la Palabra, la oración y ejercicios concretos. Para ello contarás con un manual de acompañamiento pensado para sostener el proceso entre sesiones.</p>
-          <div class="actions"><a class="button" href="../contacto/">Solicitar información</a><a class="button secondary" href="#" aria-label="Manual acompañamiento, próximamente en Amazon">Manual acompañamiento</a></div>
+          <div class="actions"><a class="button" href="#reserva">Reserva tu plaza</a><a class="button secondary" href="#" aria-label="Manual acompañamiento, próximamente en Amazon">Manual acompañamiento</a></div>
         </div>
       </section>
       <section class="section">
@@ -159,6 +167,32 @@
           <p>Estamos trabajando para tener la pr&oacute;xima edici&oacute;n en septiembre de 2026. Queremos cuidar cada detalle del material y de las sesiones, por eso anunciaremos la fecha oficial cuando todo est&eacute; preparado para ofrecer la mejor experiencia posible.</p>
           <p class="muted">Este programa ofrece acompañamiento espiritual y emocional, pero no sustituye atención médica, psicológica o psiquiátrica profesional.</p>
           <div class="actions"><a class="button" href="../contacto/">Quiero recibir información</a></div>
+        </div>
+      </section>
+      <section class="section reservation-section" id="reserva">
+        <div class="wrap reservation-grid">
+          <div>
+            <p class="eyebrow">Reserva de plaza</p>
+            <h2>Reserva tu plaza en el programa</h2>
+            <p class="lead">Un único pago de 299&nbsp;€ para acceder al acompañamiento completo: ocho sesiones online, manual de acompañamiento, ejercicios prácticos y un recorrido cuidado para integrar el duelo con psicología y fe.</p>
+            <div class="reservation-trust" aria-label="Qué incluye la reserva">
+              <span>Pago único</span>
+              <span>Acceso online</span>
+              <span>Material incluido</span>
+            </div>
+          </div>
+          <article class="card reservation-card" aria-label="Reserva del programa">
+            <p class="reservation-kicker">Programa completo</p>
+            <div class="reservation-price"><span>299&nbsp;€</span><small>un solo pago</small></div>
+            <ul class="reservation-list">
+              <li>Ocho sesiones de acompañamiento online.</li>
+              <li>Manual y ejercicios para trabajar entre sesiones.</li>
+              <li>Grupo cuidado para madres en duelo gestacional o perinatal.</li>
+              <li>Confirmación de plaza tras el pago seguro.</li>
+            </ul>
+            <a class="button reservation-button" href="../contacto/" data-stripe-payment-link="PENDIENTE_STRIPE_PAYMENT_LINK" aria-label="Reservar plaza por 299 euros">Reservar mi plaza</a>
+            <p class="reservation-note">Cuando el enlace de Stripe esté activo, este botón abrirá el pago seguro con tarjeta, Apple Pay o Google Pay si están disponibles.</p>
+          </article>
         </div>
       </section>
     </main>

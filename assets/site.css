@@ -1035,6 +1035,114 @@ h4 {
   color: var(--white);
 }
 
+.reservation-section {
+  background:
+    linear-gradient(135deg, rgba(233, 195, 73, .12), rgba(255, 255, 255, 0) 42%),
+    var(--surface);
+}
+
+.reservation-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.reservation-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: 1.7rem;
+}
+
+.reservation-trust span,
+.reservation-kicker {
+  color: var(--secondary);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.reservation-trust span {
+  padding: .62rem .85rem;
+  border: 1px solid rgba(115, 92, 0, .18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .62);
+}
+
+.reservation-card {
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+  border-color: rgba(233, 195, 73, .55);
+  background:
+    linear-gradient(180deg, rgba(233, 195, 73, .16), rgba(255, 255, 255, 0) 44%),
+    var(--surface-card);
+  box-shadow: 0 24px 60px rgba(0, 6, 19, .09);
+}
+
+.reservation-kicker {
+  margin: 0 0 .9rem;
+}
+
+.reservation-price {
+  display: flex;
+  align-items: baseline;
+  gap: .75rem;
+  margin-bottom: 1.35rem;
+  color: var(--primary);
+}
+
+.reservation-price span {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: clamp(3.2rem, 7vw, 4.7rem);
+  font-weight: 600;
+  line-height: .9;
+}
+
+.reservation-price small {
+  color: var(--text-soft);
+  font-size: .95rem;
+  font-weight: 700;
+}
+
+.reservation-list {
+  display: grid;
+  gap: .8rem;
+  margin: 0 0 1.7rem;
+  padding: 0;
+  list-style: none;
+}
+
+.reservation-list li {
+  position: relative;
+  padding-left: 1.45rem;
+  color: var(--text);
+}
+
+.reservation-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .72em;
+  width: .45rem;
+  height: .45rem;
+  border-radius: 50%;
+  background: var(--secondary-soft);
+  transform: translateY(-50%);
+}
+
+.reservation-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.reservation-note {
+  margin: 1rem 0 0;
+  color: var(--text-soft);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
 .field {
   margin-top: 1rem;
 }
@@ -1294,6 +1402,7 @@ textarea {
   .grid.four,
   #programa .grid.four,
   .split,
+  .reservation-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
