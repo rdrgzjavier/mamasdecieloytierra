@@ -1364,6 +1364,15 @@ textarea {
     flex-direction: column;
   }
 
+  .hero .actions {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .hero .actions .button {
+    width: 100%;
+  }
+
   .button {
     width: 100%;
   }
