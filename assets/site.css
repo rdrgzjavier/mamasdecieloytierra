@@ -1041,73 +1041,41 @@ h4 {
     var(--surface);
 }
 
-.reservation-grid {
+.reservation-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  grid-template-columns: minmax(0, .92fr) minmax(320px, 1fr);
   gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: center;
-}
-
-.reservation-trust {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-  margin-top: 1.7rem;
-}
-
-.reservation-trust span,
-.reservation-kicker {
-  color: var(--secondary);
-  font-size: .76rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.reservation-trust span {
-  padding: .62rem .85rem;
-  border: 1px solid rgba(115, 92, 0, .18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, .62);
-}
-
-.reservation-card {
-  padding: clamp(1.6rem, 4vw, 2.4rem);
+  align-items: start;
+  padding: clamp(2rem, 5vw, 3.4rem);
+  border: 1px solid rgba(115, 92, 0, .16);
+  border-radius: 28px;
   border-color: rgba(233, 195, 73, .55);
   background:
-    linear-gradient(180deg, rgba(233, 195, 73, .16), rgba(255, 255, 255, 0) 44%),
+    linear-gradient(135deg, rgba(233, 195, 73, .12), rgba(255, 255, 255, 0) 42%),
     var(--surface-card);
-  box-shadow: 0 24px 60px rgba(0, 6, 19, .09);
-}
-
-.reservation-kicker {
-  margin: 0 0 .9rem;
+  box-shadow: var(--shadow);
 }
 
 .reservation-price {
-  display: flex;
-  align-items: baseline;
-  gap: .75rem;
-  margin-bottom: 1.35rem;
-  color: var(--primary);
-}
-
-.reservation-price span {
-  font-family: "EB Garamond", Georgia, serif;
-  font-size: clamp(3.2rem, 7vw, 4.7rem);
-  font-weight: 600;
-  line-height: .9;
-}
-
-.reservation-price small {
+  margin: 0 0 1.2rem;
   color: var(--text-soft);
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 700;
+}
+
+.reservation-price strong {
+  color: var(--primary);
+  font-size: 1.28rem;
+  font-weight: 800;
+}
+
+.reservation-price strong span {
+  font-size: .72em;
 }
 
 .reservation-list {
   display: grid;
-  gap: .8rem;
+  gap: .78rem;
   margin: 0 0 1.7rem;
   padding: 0;
   list-style: none;
@@ -1132,8 +1100,8 @@ h4 {
 }
 
 .reservation-button {
-  width: 100%;
   justify-content: center;
+  min-width: min(100%, 260px);
 }
 
 .reservation-note {
@@ -1402,7 +1370,7 @@ textarea {
   .grid.four,
   #programa .grid.four,
   .split,
-  .reservation-grid,
+  .reservation-panel,
   .footer-grid {
     grid-template-columns: 1fr;
   }
