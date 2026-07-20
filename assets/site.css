@@ -1080,6 +1080,17 @@ h4 {
   margin-bottom: 0;
 }
 
+.profile-highlights a {
+  color: var(--secondary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+
+.profile-highlights a:hover,
+.profile-highlights a:focus-visible {
+  color: var(--primary);
+}
+
 .reservation-button {
   justify-content: center;
   min-width: min(100%, 260px);
