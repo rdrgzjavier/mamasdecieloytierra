@@ -1075,6 +1075,11 @@ h4 {
   transform: translateY(-50%);
 }
 
+.profile-highlights {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 .reservation-button {
   justify-content: center;
   min-width: min(100%, 260px);
