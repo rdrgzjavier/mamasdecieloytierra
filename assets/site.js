@@ -64,13 +64,22 @@ contactForms.forEach((form) => {
     if (submitButton) submitButton.textContent = 'Enviando...';
 
     try {
-      const response = await fetch(form.action, {
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+      const endpoint = form.dataset.ajaxEndpoint || form.action;
+      const response = await fetch(endpoint, {
         method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: new FormData(form),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
+      const result = await response.json().catch(() => null);
 
-      if (!response.ok) throw new Error('No se pudo enviar el formulario.');
+      if (!response.ok || !result || result.success === false || result.success === 'false') {
+        throw new Error(result && result.message ? result.message : 'No se pudo enviar el formulario.');
+      }
       form.reset();
       showFormModal('Solicitud enviada', 'Gracias. Hemos recibido tu mensaje y responderemos con cuidado lo antes posible.');
     } catch (error) {
