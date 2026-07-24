@@ -1,19 +1,19 @@
-﻿{
-    "theme_color":  "#f9f9f7",
-    "name":  "Mamás de Cielo y Tierra",
-    "background_color":  "#f9f9f7",
-    "display":  "standalone",
-    "short_name":  "MdCyT",
-    "icons":  [
-                  {
-                      "type":  "image/png",
-                      "sizes":  "192x192",
-                      "src":  "/assets/android-chrome-192x192.png"
-                  },
-                  {
-                      "type":  "image/png",
-                      "sizes":  "512x512",
-                      "src":  "/assets/android-chrome-512x512.png"
-                  }
-              ]
+{
+  "name": "Mamás de Cielo y Tierra",
+  "short_name": "MdCyT",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f9f9f7",
+  "background_color": "#f9f9f7",
+  "display": "standalone"
 }
