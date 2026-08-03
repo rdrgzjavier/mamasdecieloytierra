@@ -1,24 +1,25 @@
 # Mamás de Cielo y Tierra
 
-> Mamás de Cielo y Tierra es un proyecto de acompañamiento espiritual y emocional en el duelo gestacional y perinatal desde la fe cristiana. Está impulsado por Elena Gallo Moltó, psicóloga colegiada M-25624 y neuropsicóloga. El programa no sustituye atención médica, psicológica o psiquiátrica profesional.
+> Mamás de Cielo y Tierra es un proyecto de acompañamiento en el duelo gestacional, perinatal e infantil desde la psicología y la fe cristiana. Está creado y coordinado por Elena Gallo Moltó, psicóloga colegiada M-25624 y neuropsicóloga. El programa no sustituye la atención médica, psicológica o psiquiátrica individual cuando sea necesaria.
 
 Información esencial:
 - El proyecto utiliza un lenguaje respetuoso: los hijos existen, son amados y ocupan un lugar para siempre.
 - Pepe es hijo de Elena. Falleció al nacer y su vida sigue formando parte de la historia de su familia.
-- El programa propone un acompañamiento online de ocho sesiones desde la psicología y la fe cristiana.
-- Las fechas, plazas, precio y modalidad concreta de cada edición deben confirmarse mediante el formulario de contacto.
+- El programa ofrece un itinerario online y grupal de ocho sesiones.
+- La próxima edición está prevista para septiembre de 2026; la fecha definitiva se comunicará cuando todo esté preparado.
+- La reserva cuesta 290 EUR en un único pago. No se realizan devoluciones por inasistencia.
+- El manual de acompañamiento se adquirirá por separado en Amazon cuando esté disponible.
 
 ## Contenido principal
 
 - [Inicio](https://mamasdecieloytierra.com/): presentación del proyecto, características del programa y preguntas frecuentes.
-- [El programa](https://mamasdecieloytierra.com/el-programa/): recorrido online de ocho sesiones, oración, ejercicios concretos y manual de acompañamiento.
+- [El programa](https://mamasdecieloytierra.com/el-programa/): ocho sesiones, contenidos, próxima edición y reserva de plaza.
 - [Sobre Elena Gallo Moltó](https://mamasdecieloytierra.com/sobre-mi/): perfil profesional, origen del proyecto e historia de su hijo Pepe.
-- [Blog](https://mamasdecieloytierra.com/blog/): recursos sobre duelo gestacional, duelo perinatal, fe, memoria y esperanza.
-- [Contacto](https://mamasdecieloytierra.com/contacto/): solicitud de información sobre próximas ediciones.
+- [Contacto](https://mamasdecieloytierra.com/contacto/): información sobre el programa, financiación, manual y otras consultas.
 
 ## Optional
 
-- [Contexto ampliado para sistemas de IA](https://mamasdecieloytierra.com/llms-full.txt): resumen extendido de entidades, programa y preguntas frecuentes.
+- [Contexto ampliado para sistemas de IA](https://mamasdecieloytierra.com/llms-full.txt)
 - [Aviso legal](https://mamasdecieloytierra.com/aviso-legal/)
 - [Política de privacidad](https://mamasdecieloytierra.com/politica-privacidad/)
 

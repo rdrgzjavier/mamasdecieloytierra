@@ -6,10 +6,10 @@ const indexed = [
   "index.html",
   "el-programa/index.html",
   "sobre-mi/index.html",
-  "blog/index.html",
   "contacto/index.html",
 ];
 const noindex = [
+  "blog/index.html",
   "aviso-legal/index.html",
   "politica-privacidad/index.html",
 ];
@@ -56,7 +56,7 @@ for (const file of all) {
     problems.push(`${file}: indexable page marked noindex`);
   }
   if (noindex.includes(file) && !html.includes('content="noindex, follow"')) {
-    problems.push(`${file}: legal page must be noindex, follow`);
+    problems.push(`${file}: noindex page must use noindex, follow`);
   }
 }
 
@@ -92,4 +92,3 @@ if (problems.length) {
 }
 
 console.log(`SEO check passed for ${all.length} pages.`);
-

@@ -209,6 +209,40 @@ p {
   box-shadow: none;
 }
 
+.coming-soon-control {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.coming-soon-tag {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 1.1rem;
+  padding: .25rem .58rem;
+  border: 1px solid rgba(115, 92, 0, .22);
+  border-radius: 999px;
+  background: rgba(233, 195, 73, .22);
+  color: var(--secondary);
+  font-size: .58rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
+
+.button.button-disabled {
+  cursor: default;
+  opacity: .62;
+  border-color: rgba(115, 92, 0, .38);
+  background: rgba(255, 255, 255, .36);
+  color: var(--secondary);
+  box-shadow: none;
+  user-select: none;
+}
+
 .section {
   padding: 7.5rem 0;
 }
@@ -1439,6 +1473,11 @@ textarea {
   }
 
   .hero .actions .button {
+    width: 100%;
+  }
+
+  .coming-soon-control,
+  .coming-soon-control .button {
     width: 100%;
   }
 

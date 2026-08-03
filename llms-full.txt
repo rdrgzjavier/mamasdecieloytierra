@@ -2,46 +2,58 @@
 
 ## Resumen
 
-Mamás de Cielo y Tierra es un proyecto de acompañamiento espiritual y emocional en el duelo gestacional y perinatal desde la fe cristiana. Está impulsado por Elena Gallo Moltó, psicóloga colegiada M-25624 y neuropsicóloga. El programa no sustituye atención médica, psicológica o psiquiátrica profesional.
+Mamás de Cielo y Tierra es un proyecto de acompañamiento en el duelo gestacional, perinatal e infantil desde la psicología y la fe cristiana. Está creado y coordinado por Elena Gallo Moltó, psicóloga colegiada M-25624 y neuropsicóloga. El programa no sustituye la atención médica, psicológica o psiquiátrica individual cuando sea necesaria.
 
 ## Elena Gallo Moltó
 
-Elena Gallo Moltó es psicóloga colegiada M-25624 y neuropsicóloga. Su trayectoria reúne psicología sanitaria, neuropsicología, ansiedad, depresión, neurodesarrollo y acompañamiento familiar.
+Elena Gallo Moltó es licenciada en Psicología por la Universidad Complutense de Madrid, psicóloga colegiada M-25624, neuropsicóloga y directora del equipo técnico del Centro de Intervención Fundación Salud y Educación Integrales (SyEI) en Las Rozas, Madrid. También es docente colaboradora en la Universidad Francisco de Vitoria.
 
-El origen personal del proyecto está vinculado a Pepe, hijo de Elena. Pepe falleció al nacer y existe como parte viva y permanente de su familia: es amado y ocupa un lugar para siempre. Elena se presenta como madre de cuatro hijos: tres en la tierra y uno en el cielo.
+El origen personal del proyecto está vinculado a Pepe, hijo de Elena. Pepe falleció al nacer y existe como parte viva y permanente de su familia: es amado y ocupa un lugar para siempre. Elena es madre de cuatro hijos, uno de ellos, Pepe, en el Cielo.
+
+Perfiles oficiales:
+- Instagram de Elena: https://www.instagram.com/egallomolto
+- Instagram del proyecto: https://www.instagram.com/mamasdecieloytierra
+- Fundación SyEI: https://www.saludyeducacionintegrales.org/
+- Perfil profesional: https://www.doctoralia.es/elena-gallo-molto/psicologo/las-rozas-de-madrid
 
 ## Programa
 
-El programa propone un recorrido online de ocho sesiones para madres en duelo gestacional o perinatal, reciente o vivido hace años. Está construido desde la fe cristiana e incluye Palabra, oración, ejercicios concretos y un manual de acompañamiento para sostener el proceso entre sesiones.
+El programa propone un recorrido online y grupal de ocho sesiones para madres que han sufrido la pérdida de un hijo durante el embarazo, en el parto o durante sus primeros meses o años de vida. Integra psicología científica, Palabra, oración, escritura reflexiva, expresión emocional y ejercicios prácticos.
 
 Las sesiones abordan el silencio alrededor de la pérdida, las emociones, el cuerpo, el vínculo con el hijo, la crisis de fe, la reconstrucción personal, la familia y la integración de la historia vivida.
 
+La próxima edición está prevista para septiembre de 2026. La fecha definitiva se anunciará cuando el material y las sesiones estén completamente preparados.
+
+La reserva cuesta 290 EUR en un pago único. No se realizan devoluciones por inasistencia a alguna sesión. El manual de acompañamiento no está incluido: se adquirirá por separado en Amazon cuando esté disponible.
+
 ## Preguntas frecuentes esenciales
+
+### ¿A quién va dirigido?
+
+A madres que han sufrido una pérdida gestacional, perinatal o durante los primeros meses o años de vida de su hijo. El dolor no se mide por las semanas de gestación ni por el tiempo vivido.
 
 ### ¿Es terapia?
 
-No. Es acompañamiento espiritual y emocional. Puede complementar un proceso terapéutico, pero no sustituye la atención médica, psicológica o psiquiátrica.
+Es un acompañamiento grupal desde la psicología y la fe. No sustituye la atención médica, psicológica o psiquiátrica individual cuando sea necesaria.
 
 ### ¿Es online o presencial?
 
-El programa está planteado como acompañamiento online, para que puedas participar desde un lugar seguro y privado.
-
-### ¿Puedo participar si mi pérdida fue hace años?
-
-Sí. El duelo no tiene un calendario único y el programa contempla momentos distintos del camino.
+El programa se desarrolla online para facilitar la participación desde distintos lugares del mundo.
 
 ### ¿Es solo para madres creyentes?
 
-El programa está construido desde la fe cristiana, con lecturas bíblicas y oración. Las madres con dudas pueden solicitar información para valorar si encaja con ellas.
+No. Está profundamente enraizado en la fe cristiana, pero su mirada es acogedora, respetuosa y no excluyente.
+
+### ¿El duelo se supera?
+
+No. El programa trabaja la integración del duelo como parte de la historia personal. Su lema es «Al dolor, amor».
 
 ## URLs oficiales
 
 - Inicio: https://mamasdecieloytierra.com/
-- Programa: https://mamasdecieloytierra.com/el-programa/
+- Programa y reserva: https://mamasdecieloytierra.com/el-programa/
 - Sobre Elena: https://mamasdecieloytierra.com/sobre-mi/
-- Blog: https://mamasdecieloytierra.com/blog/
 - Contacto: https://mamasdecieloytierra.com/contacto/
-
 
 ## Plataforma y arquitectura
 
