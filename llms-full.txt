@@ -50,10 +50,10 @@ No. El programa trabaja la integración del duelo como parte de la historia pers
 
 ## URLs oficiales
 
-- Inicio: https://mamasdecieloytierra.com/
-- Programa y reserva: https://mamasdecieloytierra.com/el-programa/
-- Sobre Elena: https://mamasdecieloytierra.com/sobre-mi/
-- Contacto: https://mamasdecieloytierra.com/contacto/
+- Inicio: https://www.mamasdecieloytierra.com/
+- Programa y reserva: https://www.mamasdecieloytierra.com/el-programa/
+- Sobre Elena: https://www.mamasdecieloytierra.com/sobre-mi/
+- Contacto: https://www.mamasdecieloytierra.com/contacto/
 
 ## Plataforma y arquitectura
 

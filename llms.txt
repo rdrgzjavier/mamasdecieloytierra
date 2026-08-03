@@ -12,16 +12,16 @@ Información esencial:
 
 ## Contenido principal
 
-- [Inicio](https://mamasdecieloytierra.com/): presentación del proyecto, características del programa y preguntas frecuentes.
-- [El programa](https://mamasdecieloytierra.com/el-programa/): ocho sesiones, contenidos, próxima edición y reserva de plaza.
-- [Sobre Elena Gallo Moltó](https://mamasdecieloytierra.com/sobre-mi/): perfil profesional, origen del proyecto e historia de su hijo Pepe.
-- [Contacto](https://mamasdecieloytierra.com/contacto/): información sobre el programa, financiación, manual y otras consultas.
+- [Inicio](https://www.mamasdecieloytierra.com/): presentación del proyecto, características del programa y preguntas frecuentes.
+- [El programa](https://www.mamasdecieloytierra.com/el-programa/): ocho sesiones, contenidos, próxima edición y reserva de plaza.
+- [Sobre Elena Gallo Moltó](https://www.mamasdecieloytierra.com/sobre-mi/): perfil profesional, origen del proyecto e historia de su hijo Pepe.
+- [Contacto](https://www.mamasdecieloytierra.com/contacto/): información sobre el programa, financiación, manual y otras consultas.
 
 ## Optional
 
-- [Contexto ampliado para sistemas de IA](https://mamasdecieloytierra.com/llms-full.txt)
-- [Aviso legal](https://mamasdecieloytierra.com/aviso-legal/)
-- [Política de privacidad](https://mamasdecieloytierra.com/politica-privacidad/)
+- [Contexto ampliado para sistemas de IA](https://www.mamasdecieloytierra.com/llms-full.txt)
+- [Aviso legal](https://www.mamasdecieloytierra.com/aviso-legal/)
+- [Política de privacidad](https://www.mamasdecieloytierra.com/politica-privacidad/)
 
 ## Plataforma y arquitectura
 
