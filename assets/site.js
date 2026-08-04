@@ -90,15 +90,13 @@ contactForms.forEach((form) => {
 
     try {
       const formData = new FormData(form);
-      const payload = Object.fromEntries(formData.entries());
       const endpoint = form.dataset.ajaxEndpoint || form.action;
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify(payload),
+        body: new URLSearchParams(formData),
       });
       const result = await response.json().catch(() => null);
 
