@@ -54,6 +54,15 @@ document.querySelectorAll("[data-year]").forEach((node) => {
 
 const contactForms = document.querySelectorAll('[data-contact-form]');
 let formModal;
+let formModalScrollY = 0;
+
+function closeFormModal() {
+  if (!formModal) return;
+
+  formModal.classList.remove('is-visible');
+  document.body.classList.remove('form-modal-open');
+  window.scrollTo(0, formModalScrollY);
+}
 
 function showFormModal(title, message, isError = false) {
   if (!formModal) {
@@ -65,16 +74,21 @@ function showFormModal(title, message, isError = false) {
     document.body.appendChild(formModal);
     formModal.addEventListener('click', (event) => {
       if (event.target === formModal || event.target.matches('button')) {
-        formModal.classList.remove('is-visible');
+        closeFormModal();
       }
     });
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') formModal.classList.remove('is-visible');
+      if (event.key === 'Escape') closeFormModal();
     });
   }
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
+  }
+  formModalScrollY = window.scrollY;
   formModal.querySelector('.form-modal__icon').textContent = isError ? '!' : '\u2713';
   formModal.querySelector('h2').textContent = title;
   formModal.querySelector('p').textContent = message;
+  document.body.classList.add('form-modal-open');
   formModal.classList.add('is-visible');
 }
 

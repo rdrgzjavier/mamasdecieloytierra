@@ -37,6 +37,7 @@ summary {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -51,6 +52,10 @@ body {
 }
 
 body.menu-open {
+  overflow: hidden;
+}
+
+body.form-modal-open {
   overflow: hidden;
 }
 
@@ -1436,6 +1441,12 @@ textarea {
 
 @media (max-width: 620px) {
   body {
+    font-size: 16px;
+  }
+
+  input,
+  textarea,
+  select {
     font-size: 16px;
   }
 
