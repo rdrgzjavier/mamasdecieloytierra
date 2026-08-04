@@ -266,7 +266,7 @@ p {
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(249, 249, 247, .76), rgba(249, 249, 247, .66) 48%, rgba(249, 249, 247, .52)),
-    url("hero-background-serene.png");
+    url("hero-background-serene.jpg?v=20260804");
   background-size: cover;
   background-position: center;
 }
@@ -785,14 +785,20 @@ h4 {
   box-shadow: none;
 }
 
+.portrait-placeholder:is(img) {
+  display: block;
+  width: 100%;
+  padding: 0;
+  object-fit: cover;
+  background: none;
+}
+
 .portrait-elena-psicologa {
-  background-image: url("elena-gallo-psicologa.jpg");
-  background-position: center 20%;
+  object-position: center 20%;
 }
 
 .portrait-elena-home {
-  background-image: url("elena-gallo-home.jpeg");
-  background-position: center 24%;
+  object-position: center 24%;
 }
 
 .steps {
