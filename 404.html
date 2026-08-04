@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Página no encontrada | Mamás de Cielo y Tierra</title>
     <meta name="robots" content="noindex, follow">
+    <script>
+      if (window.location.hostname === "rdrgzjavier.github.io") {
+        const projectPath = "/mamasdecieloytierra";
+        let targetPath = window.location.pathname;
+        if (targetPath === projectPath || targetPath.startsWith(`${projectPath}/`)) {
+          targetPath = targetPath.slice(projectPath.length) || "/";
+        }
+        window.location.replace(
+          `https://www.mamasdecieloytierra.com${targetPath}${window.location.search}${window.location.hash}`
+        );
+      }
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">

@@ -1,3 +1,28 @@
+const canonicalOrigin = "https://www.mamasdecieloytierra.com";
+const legacyGitHubHost = "rdrgzjavier.github.io";
+const cloudflarePreviewHost = "mamasdecieloytierra.pages.dev";
+
+if (
+  window.location.hostname === legacyGitHubHost ||
+  window.location.hostname === cloudflarePreviewHost
+) {
+  let targetPath = window.location.pathname;
+
+  if (window.location.hostname === legacyGitHubHost) {
+    const legacyProjectPath = "/mamasdecieloytierra";
+    if (
+      targetPath === legacyProjectPath ||
+      targetPath.startsWith(`${legacyProjectPath}/`)
+    ) {
+      targetPath = targetPath.slice(legacyProjectPath.length) || "/";
+    }
+  }
+
+  window.location.replace(
+    `${canonicalOrigin}${targetPath}${window.location.search}${window.location.hash}`
+  );
+}
+
 const menuButton = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 
