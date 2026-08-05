@@ -36,15 +36,40 @@ if (menuButton && navLinks) {
 
 const hero = document.querySelector("[data-hero]");
 const bottomBar = document.querySelector("[data-bottom-bar]");
+const reservationSection = document.querySelector("#reserva");
 
 if (hero && bottomBar && "IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
+  let heroIsVisible = true;
+  let reservationIsVisible = false;
+
+  const updateBottomBar = () => {
+    bottomBar.classList.toggle(
+      "visible",
+      !heroIsVisible && !reservationIsVisible
+    );
+  };
+
+  const heroObserver = new IntersectionObserver(
     ([entry]) => {
-      bottomBar.classList.toggle("visible", !entry.isIntersecting);
+      heroIsVisible = entry.isIntersecting;
+      updateBottomBar();
     },
     { threshold: 0.1 }
   );
-  observer.observe(hero);
+  heroObserver.observe(hero);
+
+  if (reservationSection) {
+    const reservationObserver = new IntersectionObserver(
+      ([entry]) => {
+        reservationIsVisible = entry.isIntersecting;
+        updateBottomBar();
+      },
+      { threshold: 0 }
+    );
+    reservationObserver.observe(reservationSection);
+  }
+
+  updateBottomBar();
 }
 
 document.querySelectorAll("[data-year]").forEach((node) => {
