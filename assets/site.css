@@ -2117,13 +2117,22 @@ html body .narrow > p.eyebrow::before {
 }
 
 .colabora-amount {
-  display: block;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: .18em;
   margin-bottom: .7rem;
   color: var(--primary);
-  font-family: "EB Garamond", Georgia, serif;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1;
+}
+
+.colabora-amount-currency {
+  font-size: .52em;
+  font-weight: 800;
+  transform: translateY(-.08em);
 }
 
 .colabora-session-map {
