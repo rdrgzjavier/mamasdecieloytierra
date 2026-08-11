@@ -55,6 +55,10 @@ body.menu-open {
   overflow: hidden;
 }
 
+body.colabora-page.menu-open {
+  overflow: visible;
+}
+
 body.form-modal-open {
   overflow: hidden;
 }
@@ -2077,9 +2081,14 @@ html body .narrow > p.eyebrow::before {
   position: relative;
 }
 
-.colabora-hero .lead + p {
+.colabora-hero h1 + p,
+.colabora-hero h1 + p + p {
   max-width: 640px;
   color: var(--text-soft);
+}
+
+.colabora-hero h1 + p {
+  margin-top: 1.25rem;
 }
 
 .colabora-photo-frame {
