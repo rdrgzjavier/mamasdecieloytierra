@@ -26,8 +26,7 @@ if (
 const menuButton = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 
-// TODO: introduce aquí el Stripe Payment Link definitivo para /colabora.
-const COLABORA_STRIPE_PAYMENT_LINK = "";
+const COLABORA_STRIPE_PAYMENT_LINK = "https://buy.stripe.com/14A5kDcvjh1u5vN0Qw67S04";
 
 function trackSiteEvent(eventName, params = {}) {
   if (!eventName) return;
@@ -166,36 +165,61 @@ contactForms.forEach((form) => {
   });
 });
 
-const colaboraStripeButton = document.querySelector("[data-colabora-stripe-button]");
+const colaboraStripeCtas = document.querySelectorAll("[data-colabora-stripe-cta]");
 
-if (colaboraStripeButton) {
+if (colaboraStripeCtas.length) {
   const stripePaymentLink = COLABORA_STRIPE_PAYMENT_LINK.trim();
   const paymentStatus = document.querySelector("[data-colabora-payment-status]");
 
   if (stripePaymentLink) {
-    colaboraStripeButton.disabled = false;
-    colaboraStripeButton.removeAttribute("aria-disabled");
-
     if (paymentStatus) {
       paymentStatus.textContent = "Serás redirigida a Stripe para completar la aportación de forma segura.";
     }
 
-    colaboraStripeButton.addEventListener("click", () => {
-      trackSiteEvent("colabora_stripe_click", {
-        event_category: "colabora",
-        cta_location: "aportacion",
-        cta_type: "colaboracion",
-        destination: "stripe_payment_link"
-      });
+    colaboraStripeCtas.forEach((cta) => {
+      if (cta instanceof HTMLAnchorElement) {
+        cta.href = stripePaymentLink;
+      }
 
-      window.location.assign(stripePaymentLink);
+      if (cta instanceof HTMLButtonElement) {
+        cta.disabled = false;
+      }
+
+      cta.removeAttribute("aria-disabled");
+
+      cta.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        if (cta.dataset.analyticsEvent) {
+          trackSiteEvent(cta.dataset.analyticsEvent, {
+            event_category: "colabora",
+            cta_location: cta.dataset.analyticsSection || "",
+            cta_type: cta.dataset.analyticsCta || ""
+          });
+        }
+
+        trackSiteEvent("colabora_stripe_click", {
+          event_category: "colabora",
+          cta_location: cta.dataset.analyticsSection || "aportacion",
+          cta_type: "colaboracion",
+          destination: "stripe_payment_link"
+        });
+
+        window.location.assign(stripePaymentLink);
+      });
     });
   } else {
-    colaboraStripeButton.setAttribute("aria-disabled", "true");
+    colaboraStripeCtas.forEach((cta) => {
+      if (cta instanceof HTMLButtonElement) {
+        cta.disabled = true;
+      }
+
+      cta.setAttribute("aria-disabled", "true");
+    });
   }
 }
 
-document.querySelectorAll("[data-analytics-event]").forEach((node) => {
+document.querySelectorAll("[data-analytics-event]:not([data-colabora-stripe-cta])").forEach((node) => {
   node.addEventListener("click", () => {
     trackSiteEvent(node.dataset.analyticsEvent, {
       event_category: "colabora",
