@@ -47,11 +47,6 @@ if (menuButton && navLinks) {
 
     if (isOpen) {
       menuScrollY = window.scrollY || window.pageYOffset || 0;
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${menuScrollY}px`;
-      document.body.style.left = "0";
-      document.body.style.right = "0";
-      document.body.style.width = "100%";
     }
 
     navLinks.classList.toggle("open", isOpen);
@@ -59,16 +54,9 @@ if (menuButton && navLinks) {
     menuButton.setAttribute("aria-expanded", String(isOpen));
 
     if (!isOpen) {
-      const scrollY = menuScrollY;
       const previousScrollBehavior = document.documentElement.style.scrollBehavior;
-
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      document.body.style.width = "";
       document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo(0, scrollY);
+      window.scrollTo(0, menuScrollY);
       document.documentElement.style.scrollBehavior = previousScrollBehavior;
     }
   };
