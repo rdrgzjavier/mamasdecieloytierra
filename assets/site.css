@@ -2165,13 +2165,8 @@ html body .narrow > p.eyebrow::before {
   text-align: left;
 }
 
-.colabora-payment {
-  align-items: stretch;
-}
-
 .colabora-payment-panel {
-  display: grid;
-  align-content: center;
+  align-items: center;
 }
 
 .colabora-payment-panel .actions {
@@ -2189,15 +2184,6 @@ html body .narrow > p.eyebrow::before {
   border-radius: var(--radius);
   background: var(--surface-card);
   box-shadow: var(--shadow-soft);
-}
-
-.colabora-transparency::before {
-  content: "";
-  display: block;
-  width: 96px;
-  height: 3px;
-  margin-bottom: 1.6rem;
-  background: var(--secondary-soft);
 }
 
 .colabora-closing h2 {

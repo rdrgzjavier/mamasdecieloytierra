@@ -173,7 +173,7 @@ if (colaboraStripeCtas.length) {
 
   if (stripePaymentLink) {
     if (paymentStatus) {
-      paymentStatus.textContent = "Serás redirigida a Stripe para completar la aportación de forma segura.";
+      paymentStatus.textContent = "Proceso seguro y cifrado. Sin sorpresas.";
     }
 
     colaboraStripeCtas.forEach((cta) => {
@@ -216,6 +216,10 @@ if (colaboraStripeCtas.length) {
 
       cta.setAttribute("aria-disabled", "true");
     });
+
+    if (paymentStatus) {
+      paymentStatus.textContent = "La aportación online no está disponible en este momento.";
+    }
   }
 }
 
