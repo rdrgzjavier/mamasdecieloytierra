@@ -2105,7 +2105,15 @@ html body .narrow > p.eyebrow::before {
 }
 
 .colabora-impact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+}
+
+.colabora-impact-card.is-complete {
+  border-color: rgba(115, 92, 0, .28);
+  box-shadow: var(--shadow);
 }
 
 .colabora-amount {
@@ -2116,6 +2124,27 @@ html body .narrow > p.eyebrow::before {
   font-size: 2.6rem;
   font-weight: 500;
   line-height: 1;
+}
+
+.colabora-session-map {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(12px, 1fr));
+  gap: .35rem;
+  width: 100%;
+  margin: .2rem 0 1rem;
+}
+
+.colabora-session-map span {
+  display: block;
+  min-height: .72rem;
+  border: 1px solid var(--line-gold);
+  border-radius: 999px;
+  background: var(--surface-dim);
+}
+
+.colabora-session-map .is-active {
+  border-color: rgba(115, 92, 0, .28);
+  background: var(--secondary-soft);
 }
 
 .colabora-impact-card p {
