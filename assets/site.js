@@ -26,6 +26,19 @@ if (
 const menuButton = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 
+// TODO: introduce aquí el Stripe Payment Link definitivo para /colabora.
+const COLABORA_STRIPE_PAYMENT_LINK = "";
+
+function trackSiteEvent(eventName, params = {}) {
+  if (!eventName) return;
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    ...params
+  });
+}
+
 if (menuButton && navLinks) {
   menuButton.addEventListener("click", () => {
     const isOpen = navLinks.classList.toggle("open");
@@ -150,5 +163,44 @@ contactForms.forEach((form) => {
       form.classList.remove('is-sending');
       if (submitButton) submitButton.textContent = originalLabel;
     }
+  });
+});
+
+const colaboraStripeButton = document.querySelector("[data-colabora-stripe-button]");
+
+if (colaboraStripeButton) {
+  const stripePaymentLink = COLABORA_STRIPE_PAYMENT_LINK.trim();
+  const paymentStatus = document.querySelector("[data-colabora-payment-status]");
+
+  if (stripePaymentLink) {
+    colaboraStripeButton.disabled = false;
+    colaboraStripeButton.removeAttribute("aria-disabled");
+
+    if (paymentStatus) {
+      paymentStatus.textContent = "Serás redirigida a Stripe para completar la aportación de forma segura.";
+    }
+
+    colaboraStripeButton.addEventListener("click", () => {
+      trackSiteEvent("colabora_stripe_click", {
+        event_category: "colabora",
+        cta_location: "aportacion",
+        cta_type: "colaboracion",
+        destination: "stripe_payment_link"
+      });
+
+      window.location.assign(stripePaymentLink);
+    });
+  } else {
+    colaboraStripeButton.setAttribute("aria-disabled", "true");
+  }
+}
+
+document.querySelectorAll("[data-analytics-event]").forEach((node) => {
+  node.addEventListener("click", () => {
+    trackSiteEvent(node.dataset.analyticsEvent, {
+      event_category: "colabora",
+      cta_location: node.dataset.analyticsSection || "",
+      cta_type: node.dataset.analyticsCta || ""
+    });
   });
 });

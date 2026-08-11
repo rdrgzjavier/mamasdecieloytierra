@@ -5,6 +5,7 @@ const root = process.cwd();
 const indexed = [
   "index.html",
   "el-programa/index.html",
+  "colabora/index.html",
   "sobre-mi/index.html",
   "contacto/index.html",
 ];
@@ -16,6 +17,9 @@ const noindex = [
 const all = [...indexed, ...noindex];
 const problems = [];
 const canonicalOrigin = "https://www.mamasdecieloytierra.com";
+const sitemapSuffixes = {
+  "colabora/index.html": "/colabora",
+};
 
 function count(text, pattern) {
   return (text.match(pattern) || []).length;
@@ -59,7 +63,7 @@ for (const file of all) {
 
 const sitemap = await readFile(join(root, "sitemap.xml"), "utf8");
 for (const file of indexed) {
-  const suffix = file === "index.html" ? "/" : `/${file.replace("index.html", "")}`;
+  const suffix = sitemapSuffixes[file] || (file === "index.html" ? "/" : `/${file.replace("index.html", "")}`);
   if (!sitemap.includes(`<loc>https://www.mamasdecieloytierra.com${suffix}</loc>`)) {
     problems.push(`sitemap.xml: missing ${suffix}`);
   }
