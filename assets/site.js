@@ -40,8 +40,29 @@ function trackSiteEvent(eventName, params = {}) {
 }
 
 if (menuButton && navLinks) {
+  const pageInteractionTargets = document.querySelectorAll("main, .site-footer, [data-bottom-bar]");
+  const scrollLockKeys = new Set([" ", "ArrowDown", "ArrowUp", "End", "Home", "PageDown", "PageUp"]);
+  const isMenuOpen = () => navLinks.classList.contains("open");
+
+  const setPageInteractionDisabled = (isDisabled) => {
+    pageInteractionTargets.forEach((target) => {
+      target.toggleAttribute("inert", isDisabled);
+    });
+  };
+
+  const isInsideMenu = (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    return Boolean(target && target.closest("[data-nav-links]"));
+  };
+
+  const preventBackgroundScroll = (event) => {
+    if (isMenuOpen() && !isInsideMenu(event)) {
+      event.preventDefault();
+    }
+  };
+
   const setMenuOpen = (isOpen) => {
-    const wasOpen = navLinks.classList.contains("open");
+    const wasOpen = isMenuOpen();
 
     if (isOpen === wasOpen) return;
 
@@ -51,6 +72,7 @@ if (menuButton && navLinks) {
 
     navLinks.classList.toggle("open", isOpen);
     document.body.classList.toggle("menu-open", isOpen);
+    setPageInteractionDisabled(isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
 
     if (!isOpen) {
@@ -62,7 +84,7 @@ if (menuButton && navLinks) {
   };
 
   menuButton.addEventListener("click", () => {
-    setMenuOpen(!navLinks.classList.contains("open"));
+    setMenuOpen(!isMenuOpen());
   });
 
   navLinks.addEventListener("click", (event) => {
@@ -76,8 +98,16 @@ if (menuButton && navLinks) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       setMenuOpen(false);
+      return;
+    }
+
+    if (isMenuOpen() && scrollLockKeys.has(event.key) && !isInsideMenu(event)) {
+      event.preventDefault();
     }
   });
+
+  document.addEventListener("touchmove", preventBackgroundScroll, { passive: false });
+  document.addEventListener("wheel", preventBackgroundScroll, { passive: false });
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > 980) {
