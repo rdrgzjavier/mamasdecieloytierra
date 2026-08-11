@@ -25,6 +25,7 @@ if (
 
 const menuButton = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
+let menuScrollY = 0;
 
 const COLABORA_STRIPE_PAYMENT_LINK = "https://buy.stripe.com/14A5kDcvjh1u5vN0Qw67S04";
 
@@ -40,10 +41,36 @@ function trackSiteEvent(eventName, params = {}) {
 
 if (menuButton && navLinks) {
   const setMenuOpen = (isOpen) => {
+    const wasOpen = navLinks.classList.contains("open");
+
+    if (isOpen === wasOpen) return;
+
+    if (isOpen) {
+      menuScrollY = window.scrollY || window.pageYOffset || 0;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${menuScrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.body.style.width = "100%";
+    }
+
     navLinks.classList.toggle("open", isOpen);
-    document.documentElement.classList.toggle("menu-open", isOpen);
     document.body.classList.toggle("menu-open", isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
+
+    if (!isOpen) {
+      const scrollY = menuScrollY;
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.width = "";
+      document.documentElement.style.scrollBehavior = "auto";
+      window.scrollTo(0, scrollY);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    }
   };
 
   menuButton.addEventListener("click", () => {
@@ -54,6 +81,18 @@ if (menuButton && navLinks) {
     const target = event.target instanceof Element ? event.target : null;
 
     if (target && target.closest("a")) {
+      setMenuOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) {
       setMenuOpen(false);
     }
   });

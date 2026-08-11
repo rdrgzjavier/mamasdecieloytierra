@@ -51,9 +51,18 @@ body {
   font-synthesis: none;
 }
 
-html.menu-open,
 body.menu-open {
   overflow: hidden;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+body.menu-open .site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
 }
 
 body.form-modal-open {
