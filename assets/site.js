@@ -39,10 +39,23 @@ function trackSiteEvent(eventName, params = {}) {
 }
 
 if (menuButton && navLinks) {
-  menuButton.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
+  const setMenuOpen = (isOpen) => {
+    navLinks.classList.toggle("open", isOpen);
+    document.documentElement.classList.toggle("menu-open", isOpen);
     document.body.classList.toggle("menu-open", isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  menuButton.addEventListener("click", () => {
+    setMenuOpen(!navLinks.classList.contains("open"));
+  });
+
+  navLinks.addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+
+    if (target && target.closest("a")) {
+      setMenuOpen(false);
+    }
   });
 }
 
