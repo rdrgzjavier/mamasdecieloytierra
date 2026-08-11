@@ -2082,107 +2082,22 @@ html body .narrow > p.eyebrow::before {
   color: var(--text-soft);
 }
 
-.colabora-visual {
+.colabora-photo-frame {
   position: relative;
-  min-height: 430px;
-  display: grid;
-  place-items: center;
   margin: 0;
   border: 1px solid var(--line-gold);
   border-radius: var(--radius);
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .72), rgba(255, 255, 255, 0) 42%),
-    linear-gradient(180deg, var(--quote-surface), var(--surface-card));
+  background: var(--surface-card);
   box-shadow: var(--shadow);
+  aspect-ratio: 3 / 2;
 }
 
-.colabora-visual::before,
-.colabora-visual::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(115, 92, 0, .18);
-  border-radius: 50%;
-}
-
-.colabora-visual::before {
-  width: 280px;
-  height: 280px;
-}
-
-.colabora-visual::after {
-  width: 390px;
-  height: 390px;
-}
-
-.colabora-visual-star {
-  position: relative;
-  z-index: 2;
-  width: 82px;
-  height: 82px;
-  padding: 1rem;
-  border: 1px solid rgba(115, 92, 0, .18);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, .78);
-  box-shadow: var(--shadow-soft);
-}
-
-.colabora-visual-ring,
-.colabora-visual-point {
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.colabora-visual-ring {
-  border: 1px solid rgba(23, 50, 77, .18);
-}
-
-.colabora-visual-ring.ring-one {
-  width: 180px;
-  height: 180px;
-}
-
-.colabora-visual-ring.ring-two {
-  width: 320px;
-  height: 320px;
-}
-
-.colabora-visual-point {
-  width: 18px;
-  height: 18px;
-  background: var(--secondary-soft);
-  border: 3px solid var(--surface-card);
-  box-shadow: 0 10px 22px rgba(0, 6, 19, .08);
-}
-
-.colabora-visual-point.point-one {
-  top: 26%;
-  left: 22%;
-}
-
-.colabora-visual-point.point-two {
-  right: 21%;
-  top: 34%;
-  background: var(--primary-soft);
-}
-
-.colabora-visual-point.point-three {
-  right: 32%;
-  bottom: 23%;
-}
-
-.colabora-visual figcaption {
-  position: absolute;
-  left: 2rem;
-  right: 2rem;
-  bottom: 1.5rem;
-  z-index: 2;
-  margin: 0;
-  color: var(--text-soft);
-  font-size: .82rem;
-  font-weight: 700;
-  text-align: center;
+.colabora-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .colabora-impact-grid {
@@ -2272,32 +2187,9 @@ html body .narrow > p.eyebrow::before {
   .colabora-hero {
     min-height: 0;
   }
-
-  .colabora-visual {
-    min-height: 360px;
-  }
 }
 
 @media (max-width: 620px) {
-  .colabora-visual {
-    min-height: 320px;
-  }
-
-  .colabora-visual::before {
-    width: 220px;
-    height: 220px;
-  }
-
-  .colabora-visual::after {
-    width: 300px;
-    height: 300px;
-  }
-
-  .colabora-visual figcaption {
-    left: 1.5rem;
-    right: 1.5rem;
-  }
-
   .colabora-transparency {
     padding: 2rem;
   }
