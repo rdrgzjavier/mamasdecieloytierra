@@ -55,10 +55,6 @@ body.menu-open {
   overflow: hidden;
 }
 
-body.colabora-page.menu-open {
-  overflow: visible;
-}
-
 body.form-modal-open {
   overflow: hidden;
 }
@@ -2051,24 +2047,6 @@ html body .narrow > p.eyebrow::before {
   pointer-events: none;
 }
 
-.icon-butterfly svg {
-  display: block !important;
-  width: 24px;
-  height: 24px;
-  overflow: visible;
-}
-
-.session-number .icon-butterfly svg {
-  width: 22px;
-  height: 22px;
-}
-
-.icon-butterfly::before,
-.icon-butterfly::after {
-  content: none !important;
-  display: none !important;
-}
-
 #aportacion {
   scroll-margin-top: 88px;
 }
@@ -2081,8 +2059,7 @@ html body .narrow > p.eyebrow::before {
   position: relative;
 }
 
-.colabora-hero h1 + p,
-.colabora-hero h1 + p + p {
+.colabora-hero h1 ~ p {
   max-width: 640px;
   color: var(--text-soft);
 }
