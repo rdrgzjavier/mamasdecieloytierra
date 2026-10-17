@@ -1973,25 +1973,20 @@ html body .narrow > p.eyebrow::before {
   pointer-events: none;
 }
 
-.personal-story-section .narrow {
+.personal-story-section .wrap {
   position: relative;
 }
 
-.personal-story-section h2 {
-  max-width: 700px;
-}
-
 .personal-story-copy {
-  max-width: 760px;
   margin-top: 1.4rem;
 }
 
 .personal-story-copy .lead {
+  max-width: none;
   color: var(--primary);
 }
 
 .personal-story-note {
-  max-width: 620px;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(115, 92, 0, .24);
@@ -2260,6 +2255,21 @@ html body .narrow > p.eyebrow::before {
   color: var(--secondary);
 }
 
+.about-page .section-head {
+  max-width: none;
+}
+
+.about-page .wrap > h2 + p {
+  margin-top: 1.25rem;
+}
+
+.about-page .wrap > .eyebrow::before {
+  content: "";
+  width: 112px;
+  height: 1px;
+  background: var(--secondary-soft);
+}
+
 @media (max-width: 980px) {
   .colabora-hero {
     min-height: 0;
@@ -2267,6 +2277,10 @@ html body .narrow > p.eyebrow::before {
 }
 
 @media (max-width: 620px) {
+  .about-page .wrap > .eyebrow::before {
+    width: 64px;
+  }
+
   .program-intro-section .eyebrow::before,
   .program-colabora-section .eyebrow::before {
     width: 64px;
