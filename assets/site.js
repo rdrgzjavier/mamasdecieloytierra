@@ -160,6 +160,15 @@ document.querySelectorAll("[data-year]").forEach((node) => {
 
 
 const contactForms = document.querySelectorAll('[data-contact-form]');
+const requestedInterest = new URLSearchParams(window.location.search).get('interes');
+if (requestedInterest === 'Programa privado') {
+  contactForms.forEach((form) => {
+    const interest = form.querySelector('[name="interes"]');
+    if (interest && Array.from(interest.options).some((option) => option.value === requestedInterest)) {
+      interest.value = requestedInterest;
+    }
+  });
+}
 let formModal;
 let formModalScrollY = 0;
 
@@ -211,6 +220,9 @@ contactForms.forEach((form) => {
 
     try {
       const formData = new FormData(form);
+      if (formData.get('interes') === 'Programa privado') {
+        formData.set('_subject', 'Programa privado | Nueva solicitud desde Mamás de Cielo y Tierra');
+      }
       const endpoint = form.dataset.ajaxEndpoint || form.action;
       const response = await fetch(endpoint, {
         method: 'POST',
